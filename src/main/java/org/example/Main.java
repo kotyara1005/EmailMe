@@ -6,8 +6,14 @@ import org.example.parsers.*;
 import org.apache.commons.mail.*;
 import java.io.IOException;
 
-public class Main {
-    public static void sendEmail(String password, String msg) throws EmailException {
+
+class Emailer {
+    private final String password;
+    Emailer(String password) {
+        this.password = password;
+    }
+
+    public void sendEmail(String msg) throws EmailException {
         Email email = new SimpleEmail();
         email.setHostName("smtp.gmail.com");
         email.setSmtpPort(587);
@@ -19,17 +25,17 @@ public class Main {
         email.addTo("krivonos.artm@gmail.com");
         email.send();
     }
-    public static void main(String[] args) throws IOException, InterruptedException, EmailException {
-        String password = System.getenv("EMAIL_PASSWORD");
+}
 
-        List<Parser> parsers = new ArrayList<>();
-        parsers.add(new AirbnbParser());
-        parsers.add(new AmazonParser());
-        parsers.add(new DropboxParser());
-        parsers.add(new EbayParser());
-        parsers.add(new RedditParser());
-        parsers.add(new SoundCloudParser());
+class App {
+    Emailer emailer;
+    List<Parser> parsers;
+    App(Emailer emailer, List<Parser> parsers) {
+        this.emailer = emailer;
+        this.parsers = parsers;
+    }
 
+    public void run() throws IOException, InterruptedException, EmailException {
         ArrayList<ParsingEntry> results = new ArrayList<>();
 
         for (Parser parser: parsers) {
@@ -41,6 +47,25 @@ public class Main {
             b.append(String.format("%s(%s)\n%s\n\n", pe.title, pe.published.toLocalDate(), pe.link));
         }
         System.out.println(b);
-        sendEmail(password, b.toString());
+        emailer.sendEmail(b.toString());
+    }
+}
+
+public class Main {
+    public static void main(String[] args) throws IOException, InterruptedException, EmailException {
+        String password = System.getenv("EMAIL_PASSWORD");
+        if (password.equals("")) {
+            return;
+        }
+
+        List<Parser> parsers = new ArrayList<>();
+        parsers.add(new AirbnbParser());
+        parsers.add(new AmazonParser());
+        parsers.add(new DropboxParser());
+        parsers.add(new EbayParser());
+        parsers.add(new RedditParser());
+        parsers.add(new SoundCloudParser());
+
+        new App(new Emailer(password), parsers).run();
     }
 }
