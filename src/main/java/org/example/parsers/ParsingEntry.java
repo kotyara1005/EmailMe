@@ -10,12 +10,6 @@ public class ParsingEntry {
     public ParsingEntry() {
     }
 
-    public ParsingEntry(String title, String link, ZonedDateTime published) {
-        this.title = title;
-        this.link = link;
-        this.published = published;
-    }
-
     public String toString() {
         return String.format("title %s link %s published %s", title, link, published);
     }

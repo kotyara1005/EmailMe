@@ -11,10 +11,7 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.time.Duration;
-import java.time.LocalDate;
-import java.time.ZoneId;
 import java.time.ZonedDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class RedditParser implements Parser {
@@ -29,9 +26,9 @@ public class RedditParser implements Parser {
         Document doc = Jsoup.parse(response.body());
 
         Elements entries = doc.getElementsByTag("article");
-        System.out.println(entries.size());
+//        System.out.println(entries.size());
 
-        ZonedDateTime start_from = ZonedDateTime.now().minus(Duration.ofDays(700));
+        ZonedDateTime start_from = ZonedDateTime.now().minus(Duration.ofDays(7));
         ArrayList<ParsingEntry> result = new ArrayList<>();
 
         for (Element el:entries) {
@@ -44,7 +41,7 @@ public class RedditParser implements Parser {
             if (dt.equals("")) continue;
 
             am.published = ZonedDateTime.parse(dt);
-            System.out.println(am);
+//            System.out.println(am);
             if (am.published.isAfter(start_from)) {
                 result.add(am);
             }

@@ -31,7 +31,7 @@ public class EbayParser implements Parser {
 //        System.out.println(response.body());
 
         Elements entries = doc.getElementsByAttribute("data-id");
-        System.out.println(entries.size());
+//        System.out.println(entries.size());
 
         ZonedDateTime start_from = ZonedDateTime.now().minus(Duration.ofDays(7));
         ArrayList<ParsingEntry> result = new ArrayList<>();
@@ -46,7 +46,7 @@ public class EbayParser implements Parser {
             if (dt.equals("")) continue;
 
             am.published = LocalDate.parse(dt, DateTimeFormatter.ofPattern("yyyy-MM-dd")).atStartOfDay(ZoneId.of("UTC"));
-            System.out.println(am);
+//            System.out.println(am);
             if (am.published.isAfter(start_from)) {
                 result.add(am);
             }
