@@ -20,7 +20,7 @@ import java.util.ArrayList;
 public class EbayParser implements Parser {
 
     @Override
-    public ArrayList<ParsingEntry> parse() throws IOException, InterruptedException {
+    public ArrayList<ParsingEntry> parse(ZonedDateTime start_from) throws IOException, InterruptedException {
         HttpClient client = HttpClient.newBuilder().build();
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create("https://tech.ebayinc.com/engineering/"))
@@ -31,9 +31,6 @@ public class EbayParser implements Parser {
 //        System.out.println(response.body());
 
         Elements entries = doc.getElementsByAttribute("data-id");
-//        System.out.println(entries.size());
-
-        ZonedDateTime start_from = ZonedDateTime.now().minus(Duration.ofDays(7));
         ArrayList<ParsingEntry> result = new ArrayList<>();
 
         for (Element el:entries) {

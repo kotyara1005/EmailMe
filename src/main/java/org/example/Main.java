@@ -1,5 +1,9 @@
 package org.example;
 
+import java.net.http.HttpClient;
+import java.time.Clock;
+import java.time.Duration;
+import java.time.ZonedDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import org.example.parsers.*;
@@ -28,18 +32,20 @@ class Emailer {
 }
 
 class App {
+    Clock clock;
     Emailer emailer;
     List<Parser> parsers;
-    App(Emailer emailer, List<Parser> parsers) {
+    App(Emailer emailer, List<Parser> parsers, Clock clock) {
         this.emailer = emailer;
         this.parsers = parsers;
+        this.clock = clock;
     }
 
     public void run() throws IOException, InterruptedException, EmailException {
         ArrayList<ParsingEntry> results = new ArrayList<>();
 
         for (Parser parser: parsers) {
-            results.addAll(parser.parse());
+            results.addAll(parser.parse(ZonedDateTime.now().minus(Duration.ofDays(7))));
         }
 
         StringBuilder b = new StringBuilder();
@@ -59,15 +65,15 @@ public class Main {
             System.err.println("No password provided");
             return;
         }
-
+        HttpClient client = HttpClient.newHttpClient();
         List<Parser> parsers = new ArrayList<>();
-        parsers.add(new AirbnbParser());
+        parsers.add(new AirbnbParser(client));
         parsers.add(new AmazonParser());
         parsers.add(new DropboxParser());
         parsers.add(new EbayParser());
         parsers.add(new RedditParser());
         parsers.add(new SoundCloudParser());
 
-        new App(new Emailer(password), parsers).run();
+        new App(new Emailer(password), parsers, Clock.systemDefaultZone()).run();
     }
 }

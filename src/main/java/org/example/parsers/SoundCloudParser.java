@@ -10,14 +10,13 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.time.Duration;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class SoundCloudParser implements Parser {
     @Override
-    public ArrayList<ParsingEntry> parse() throws IOException, InterruptedException {
+    public ArrayList<ParsingEntry> parse(ZonedDateTime start_from) throws IOException, InterruptedException {
         HttpClient client = HttpClient.newBuilder().build();
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create("https://developers.soundcloud.com/blog/blog.rss"))
@@ -28,7 +27,6 @@ public class SoundCloudParser implements Parser {
 
         Elements entries = doc.getElementsByTag("item");
         System.out.println(entries.size());
-        ZonedDateTime start_from = ZonedDateTime.now().minus(Duration.ofDays(7));
         ArrayList<ParsingEntry> result = new ArrayList<>();
 
         for (Element el:entries) {

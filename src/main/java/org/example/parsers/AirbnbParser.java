@@ -15,9 +15,13 @@ import java.time.ZonedDateTime;
 import java.util.ArrayList;
 
 public class AirbnbParser implements Parser {
+    HttpClient client;
+
+    public AirbnbParser(HttpClient client) {
+        this.client = client;
+    }
     @Override
-    public ArrayList<ParsingEntry> parse() throws IOException, InterruptedException {
-        HttpClient client = HttpClient.newBuilder().build();
+    public ArrayList<ParsingEntry> parse(ZonedDateTime start_from) throws IOException, InterruptedException {
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create("https://medium.com/airbnb-engineering/airbnb-engineering-infrastructure/home"))
                 .GET()
@@ -26,8 +30,8 @@ public class AirbnbParser implements Parser {
         Document doc = Jsoup.parse(response.body());
 
         Elements entries = doc.getElementsByAttribute("data-index");
-        System.out.println(entries.size());
-        ZonedDateTime start_from = ZonedDateTime.now().minus(Duration.ofDays(7));
+//        System.out.println(doc);
+//        System.out.println(entries.size());
         ArrayList<ParsingEntry> result = new ArrayList<>();
 
         for (Element el:entries) {

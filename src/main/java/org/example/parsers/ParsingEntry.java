@@ -10,7 +10,23 @@ public class ParsingEntry {
     public ParsingEntry() {
     }
 
+    public ParsingEntry(String title, String link, ZonedDateTime published) {
+        this.title = title;
+        this.link = link;
+        this.published = published;
+    }
+
     public String toString() {
-        return String.format("title %s link %s published %s", title, link, published);
+        return String.format("ParsingEntry(%s, %s, %s)", title, link, published);
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj instanceof ParsingEntry that) {
+            return (this.title.equals(that.title) && this.link.equals(that.link) && this.published.equals(that.published));
+        }
+        return false;
     }
 }
