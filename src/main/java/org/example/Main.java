@@ -9,6 +9,7 @@ import java.util.List;
 import org.example.parsers.*;
 import org.apache.commons.mail.*;
 import java.io.IOException;
+import io.sentry.Sentry;
 
 
 class Emailer {
@@ -58,13 +59,19 @@ class App {
 }
 
 public class Main {
-    public static void main(String[] args) throws IOException, InterruptedException, EmailException {
+    public static void main(String[] args) {
         System.out.println("42");
         String password = System.getenv("EMAIL_PASSWORD");
         if (password == null || password.equals("")) {
             System.err.println("No password provided");
             return;
         }
+
+        String sentryDsn = System.getenv("SENTRY_DSN");
+        if (sentryDsn != null) {
+            Sentry.init(options -> options.setDsn(sentryDsn));
+        }
+
         HttpClient client = HttpClient.newHttpClient();
         List<Parser> parsers = new ArrayList<>();
         parsers.add(new AirbnbParser(client));
@@ -73,7 +80,10 @@ public class Main {
         parsers.add(new EbayParser());
         parsers.add(new RedditParser());
         parsers.add(new SoundCloudParser());
-
-        new App(new Emailer(password), parsers, Clock.systemDefaultZone()).run();
+        try {
+            new App(new Emailer(password), parsers, Clock.systemDefaultZone()).run();
+        } catch (Exception e) {
+            Sentry.captureException(e);
+        }
     }
 }
