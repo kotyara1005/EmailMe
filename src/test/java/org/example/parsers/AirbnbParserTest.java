@@ -1,19 +1,19 @@
 package org.example.parsers;
 
 import org.junit.jupiter.api.Test;
-import java.nio.file.Files;
-
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
 
 import java.io.IOException;
 import java.net.http.HttpClient;
 import java.net.http.HttpResponse;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.time.Clock;
 import java.time.Duration;
 import java.time.ZonedDateTime;
 import java.util.ArrayList;
+
+import static org.junit.jupiter.api.Assertions.assertIterableEquals;
+import static org.mockito.Mockito.*;
 
 public class AirbnbParserTest {
 
