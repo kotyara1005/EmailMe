@@ -53,8 +53,10 @@ class App {
 
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException, EmailException {
+        System.out.println("42");
         String password = System.getenv("EMAIL_PASSWORD");
-        if (password.equals("")) {
+        if (password == null || password.equals("")) {
+            System.err.println("No password provided");
             return;
         }
 
