@@ -30,6 +30,7 @@ public class ParsersTest {
     @TestFactory
     Collection<DynamicTest> testParsers() {
         Collection<DynamicTest> tests = new ArrayList<>();
+
         ArrayList<ParsingEntry> e1 = new ArrayList<>();
         e1.add(new ParsingEntry(
                 "PR Templates for Effective Pull Requests",
@@ -85,6 +86,59 @@ public class ParsersTest {
                         )
                 )
         );
+
+        ArrayList<ParsingEntry> e4 = new ArrayList<>();
+        e4.add(new ParsingEntry(
+                "客户现在可以在Windows 11上预览亚马逊应用商店（发布时仅在美国提供）",
+                "https://developer.amazon.com/blogs/appstore/post/a1c4daaa-fd6d-4943-959f-3b84e35f6b9c/cn-customers-can-now-preview-the-amazon-appstore-on-windows-11",
+                ZonedDateTime.parse("2022-03-21T22:13:29Z")
+        ));
+
+        tests.add(
+                DynamicTest.dynamicTest(
+                        "AmazonParser",
+                        () -> testParse(
+                                new AmazonParser(client),
+                                e4,
+                                ZonedDateTime.parse("2022-03-21T22:10:29Z"),
+                                Path.of("test_data/amazon")
+                        )
+                )
+        );
+
+        ArrayList<ParsingEntry> e5 = new ArrayList<>();
+        e5.add(new ParsingEntry("Fighting the forces of clock skew when syncing password payloads", "https://dropbox.tech/application/dropbox-passwords-clock-skew-payload-sync-merge", ZonedDateTime.parse("2022-05-17T00:00Z[UTC]")));
+        e5.add(new ParsingEntry("Fighting the forces of clock skew when syncing password payloads", "https://dropbox.tech/application/dropbox-passwords-clock-skew-payload-sync-merge", ZonedDateTime.parse("2022-05-17T00:00Z[UTC]")));
+
+        tests.add(
+                DynamicTest.dynamicTest(
+                        "DropboxParser",
+                        () -> testParse(
+                                new DropboxParser(client),
+                                e5,
+                                ZonedDateTime.parse("2022-05-16T00:00Z[UTC]"),
+                                Path.of("test_data/dropbox")
+                        )
+                )
+        );
+
+        ArrayList<ParsingEntry> e6 = new ArrayList<>();
+        e6.add(new ParsingEntry(
+                "eBay's Notification Streaming Platform: How eBay Handles Real-Time Push Notifications at Scale",
+                "https://tech.ebayinc.com//engineering/ebays-notification-streaming-platform-how-ebay-handles-real-time-push-notifications-at-scale/",
+                ZonedDateTime.parse("2022-07-13T00:00Z[UTC]")));
+
+        tests.add(
+                DynamicTest.dynamicTest(
+                        "EbayParser",
+                        () -> testParse(
+                                new EbayParser(client),
+                                e6,
+                                ZonedDateTime.parse("2022-07-12T00:00Z[UTC]"),
+                                Path.of("test_data/ebay")
+                        )
+                )
+        );
         return tests;
     }
 
@@ -95,6 +149,7 @@ public class ParsersTest {
         when(client.send(any(), any(HttpResponse.BodyHandlers.ofString().getClass()))).thenReturn(mockResponse);
 
         ArrayList<ParsingEntry> result = p.parse(start_from);
+        System.out.println(result);
         assertIterableEquals(expected, result);
     }
 }

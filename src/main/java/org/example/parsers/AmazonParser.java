@@ -20,7 +20,6 @@ public class AmazonParser implements Parser {
         this.client = client;
     }
     public ArrayList<ParsingEntry> parse(ZonedDateTime start_from) throws IOException, InterruptedException {
-        HttpClient client = HttpClient.newBuilder().build();
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create("https://developer.amazon.com/blogs/appstore/feed/entries/atom"))
                 .GET()

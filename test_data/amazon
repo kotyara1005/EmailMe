@@ -1,0 +1,1653 @@
+
+
+
+
+
+
+
+
+
+
+ 
+
+<!doctype html><html lang="en_US" class="a-no-js" data-19ax5a9jf="dingo">
+    
+
+
+
+
+
+
+
+
+
+ 
+
+
+    <head><script>var aPageStart = (new Date()).getTime();</script><meta charset="utf-8"/>
+        
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        
+        
+            
+                <title>Appstore Blogs</title>
+                
+            
+            
+            
+        
+
+        
+        
+            
+            
+                
+            
+        
+
+        
+        
+        
+        
+        
+        
+        <meta name="google-site-verification" content="wfEDah_6uJe9Y7uIfLrVycd_efr8wQ9YO-fM_5MI5w0" />
+        
+        <meta name="google-site-verification" content="Eu8BqTWMhRRdfCAdqUh2RYb3SjAiuFp4wmgTtGcteM0" />
+        
+        
+            <link rel="alternate" href="https://developer.amazon.com/blogs/appstore/feed/entries" hreflang="en_US" />
+            
+                
+                <link rel="canonical" href="https://developer.amazon.com/blogs/appstore/feed/entries" />
+            
+        
+        
+        <meta name="google-site-verification" content="KHmp6TUPKc1gHlM9TuB842pcV7TxZVV6TgenZtsYoNY" />
+        
+        <meta name="msvalidate.01" content="9761B379C1B64F587D71BA40337FDD07" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5LVXJD4');</script>
+        <!-- End Google Tag Manager -->
+
+        <script language="JavaScript" type="text/javascript">
+
+        var digitalData ={
+            page:{
+                pageInfo: {
+                    pageInstanceID: "\/blogs\/appstore\/feed\/entries",
+                    path: "\/blogs\/appstore\/feed\/entries",
+                    pageID: "",
+                    pageTitle: "",
+                    pageType: "DeX",
+                    primaryCategory: "appstore",
+                    pageName: "",
+                    language: "en_US"
+                }
+            },
+            user:{
+                userID: "",
+                ipAddress: "213.127.46.69"
+            }
+        };
+        var urlSplit = "\/blogs\/appstore\/feed\/entries".split("/");
+        var trailingSlash = urlSplit.pop();
+        var pTitle = trailingSlash;
+        if (trailingSlash == ""){
+            pTitle = urlSplit.pop()
+        }
+
+        
+        if ("".indexOf("search") !== -1) {
+            digitalData.page.pageInfo.searchResultsNum = "";
+        }
+
+        if ("".indexOf("dex-home") !== -1){
+            digitalData.page.pageInfo.pageID = "Home";
+            digitalData.page.pageInfo.pageTitle = "Home";
+            digitalData.page.pageInfo.primaryCategory = "Home";
+        } else {
+            digitalData.page.pageInfo.pageID = pTitle;
+            pTitle = pTitle.replace(/(^|-)[a-z]/g,function(f){return f.toUpperCase();});
+            pTitle = pTitle.replace(/-/g, '');
+            digitalData.page.pageInfo.pageTitle = pTitle;
+            var pCat = digitalData.page.pageInfo.primaryCategory;
+            pCat = pCat.replace(/(^|-)[a-z]/g,function(f){return f.toUpperCase();});
+            pCat = pCat.replace(/-/g, '');
+            digitalData.page.pageInfo.primaryCategory = pCat;
+        }
+
+        var pageNameStr = "" + digitalData.page.pageInfo.primaryCategory;
+        //Todo: add in logic for sub-categories when AOI is implemented.
+        if (digitalData.page.pageInfo.pageTitle != null){
+        	if (pageNameStr != ""){
+        		pageNameStr += ":";
+        	}
+            pageNameStr += digitalData.page.pageInfo.pageTitle;
+        }
+        digitalData.page.pageInfo.pageName = pageNameStr;
+
+        
+        (function (w) {
+           w.URLSearchParams = w.URLSearchParams || function (searchString) {
+               var self = this;
+               self.searchString = searchString;
+               self.get = function (name) {
+                   var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(self.searchString);
+                   if (results == null) {
+                       return null;
+                   }
+                   else {
+                       return decodeURI(results[1]) || 0;
+                   }
+               };
+           }
+        })(window);
+
+        </script>
+
+
+        <script src="/res/static/adobe/launch-148545904475.min.js" async></script>
+
+
+
+        <script src="https://m.media-amazon.com/images/G/01/alexa-blueprints/jquery-3.3.1.min._CB1518646291_.js"></script>
+        <script src="https://dwrl96u0lgux5.cloudfront.net/CoveoJsSearch.min.js"></script>
+        
+        <link rel="stylesheet" href="https://dwrl96u0lgux5.cloudfront.net/CoveoFullSearch.min.css" />
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const organizationId = "amazoncomproduction9q1by2xb";
+            const apiKey = "xx42d66989-6d5b-4bd4-bc36-d3b3a04aa40f";
+            Coveo.SearchEndpoint.configureCloudV2Endpoint(organizationId, apiKey);
+          })
+        </script>
+        
+<script type="text/javascript">
+(function() {
+  var didInit = false;
+  function initMunchkin() {
+    if(didInit === false) {
+      didInit = true;
+      Munchkin.init('365-EFI-026');
+    }
+  }
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//munchkin.marketo.net/munchkin.js';
+  s.onreadystatechange = function() {
+    if (this.readyState == 'complete' || this.readyState == 'loaded') {
+      initMunchkin();
+    }
+  };
+  s.onload = initMunchkin;
+  document.getElementsByTagName('head')[0].appendChild(s);
+})();
+</script>
+
+
+        
+        <link rel="stylesheet" href="https://images-na.ssl-images-amazon.com/images/I/11EIQ5IGqaL._RC|01ZTHTZObnL.css,41wZkyTaWoL.css,31Y8m1dzTdL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11bGSgD5pDL.css,01Dm5eKVxwL.css,01IdKcBuAdL.css,01y-XAlI+2L.css,21N4kUH7pxL.css,01oDR3IULNL.css,41CYNGpGlrL.css,01XPHJk60-L.css,114y0SIP+yL.css,21aPhFy+riL.css,11gneA3MtJL.css,21fecG8pUzL.css,01ulGzBW88L.css,01CFUgsA-YL.css,31C80IiXalL.css,11qour3ND0L.css,11gKCCKQV+L.css,11061HxnEvL.css,11oHt2HYxnL.css,013RDhw9hoL.css,11JQtnL-6eL.css,116v6uYvN6L.css,11jtXRmppwL.css,01QrWuRrZ-L.css,21zuRztKjtL.css,11QyqG8yiqL.css,11K24eOJg4L.css,11F2+OBzLyL.css,01890+Vwk8L.css,11Y05DTEL6L.css,01cbS3UK11L.css,21F85am0yFL.css,01giMEP+djL.css_.css?AUIClients/AmazonUI#us.not-trident" />
+<link rel="stylesheet" href="https://images-na.ssl-images-amazon.com/images/I/715xYuoFe3L.css?AUIClients/DeXWebsiteAUIAssets" />
+
+        
+        
+    </head>
+
+
+    <body class="a-m-us a-aui_72554-c a-aui_accordion_a11y_role_354025-c a-aui_killswitch_csa_logger_372963-c a-aui_launch_2021_ally_fixes_392482-c a-aui_pci_risk_banner_210084-c a-aui_preload_261698-c a-aui_rel_noreferrer_noopener_309527-c a-aui_template_weblab_cache_333406-c a-aui_tnr_v2_180836-c"><div id="a-page"><script type="a-state" data-a-state="{&quot;key&quot;:&quot;a-wlab-states&quot;}">{"AUI_TNR_V2_180836":"C","AUI_ACCORDION_A11Y_ROLE_354025":"C","AUI_PRELOAD_261698":"C","AUI_LAUNCH_2021_ALLY_FIXES_392482":"C","AUI_TEMPLATE_WEBLAB_CACHE_333406":"C","AUI_72554":"C","AUI_KILLSWITCH_CSA_LOGGER_372963":"C","AUI_REL_NOREFERRER_NOOPENER_309527":"C","AUI_PCI_RISK_BANNER_210084":"C"}</script>
+        
+
+
+
+
+
+
+
+
+<header class='dpHeader dphThemedark'>
+    <div class='dphTopBar clearfix'>
+        <div class='dphLeft'>
+            <div class='dphMenuToggle'>
+                <i class='dphMenuIcon'></i>
+                <i class='dphMenuBackIcon'></i>
+            </div>
+            <a class='dphLogo' href='/apps-and-games'>
+                <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/logos/amazonAppstoreLogoDarkBG1x_new.png" 
+                     srcset="https://m.media-amazon.com/images/G/01/mobile-apps/dex/logos/amazonAppstoreLogoDarkBG1x_new.png 1x, https://m.media-amazon.com/images/G/01/mobile-apps/dex/logos/amazonAppstoreLogoDarkBG2x.png 2x" 
+                     alt="Amazon Developer Logo">
+            </a>
+        </div>
+        <div class='dphRight'>
+            
+
+
+
+<div class="dphSearchBarWrap">
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        Coveo.initSearchbox(
+          document.getElementById("dphSearchBox"),
+          "/search"
+        );
+        $('#dphSearchBox .magic-box input').attr('placeholder', 'Search...');
+      })
+    </script>
+    <div class="dphSearch active">
+        <div class="dphSearchWrap">
+            <div id="dphSearchBox" class="CoveoSearchInterface" data-excerpt-length="120"
+                 data-pipeline="AppstoreAllContent"
+                 data-enable-duplicate-filtering="true" data-allow-queries-without-keywords="false">
+                <div class="CoveoAnalytics" data-anonymous="true" data-search-hub="dex-header-search"></div>
+                <div class="coveo-search-section">
+                    <script class="CoveoPipelineContext" type="text/context">
+                    {
+                        "language": "English"
+                    }
+                    </script>
+                    <div class="CoveoSearchbox" data-enable-omnibox="true" data-enable-query-syntax="true"
+                         data-search-as-you-type-delay="300">
+                        <div class="CoveoOmniboxResultList" data-layout="list">
+                            <div class="coveo-show-if-results">
+                                <script class="result-template" type="text/html">
+                                    <div>
+                                        <div class="co-highlight">
+                                            <div><a class='CoveoResultLink'></a></div>
+                                            <div class='CoveoExcerpt'></div>
+                                        </div>
+                                    </div>
+                                </script>
+                            </div>
+                            <div class="coveo-show-if-no-results">
+                                <p>No results found</p>
+                                <div class="co-empty">Try a different or more specific query</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            
+            
+                
+                
+                    <a href="/home.html" class='dphConsole dphLink'>Developer Console</a>
+                
+            
+
+            
+            
+
+
+
+
+
+
+
+    
+
+<div class='dphUserInfo'>
+    
+        
+            <a class="dphLink" href="/settings/console/registration?return_to=/blogs/appstore/feed/entries">Sign In</a>
+        
+        
+    
+</div>
+
+            
+            
+
+
+<style>
+    #notification-counter {
+        position: absolute;
+        top: 2px;
+        padding: 0 2px;
+        min-width: 20px;
+        background: #BF2727;
+        color: white;
+        font-size: 11px;
+        border-radius: 3px;
+        line-height: 20px;
+        text-align: center;
+    }
+    #notification_click_icon {
+        width: 32px;
+        height: 32px;
+        background-color: #31465f;
+        text-align: center;
+        line-height: 32px;
+        border-radius: 50%;
+        margin-right: 15px;
+        color: white;
+        font-weight: 300;
+        cursor: pointer;
+    }
+    #notification-placeholder {
+        position: absolute;
+        top:45px;
+    }
+    #notification_flyout_iframe_id {
+        display: none;
+        position: absolute;
+        width: 425px;
+        border: none;
+        transform: translate(-80%);
+        transition: all 0.2s;
+    }
+
+    @media screen and (max-width: 992px) {
+        #notification_click_icon {
+            position: fixed;
+            display: inline-block;
+            right: 10px;
+            margin-right: 5px;
+        }
+        #notification_click_icon ~ .dphSearch.active {
+            position: relative;
+            z-index: 0;
+        }
+        #notification-placeholder {
+            top:28px;
+        }
+        #notification-counter {
+            top: -6px;
+        }
+    }
+
+    @media screen and (max-width: 414px) {
+        #notification_flyout_iframe_id {
+            transform: none;
+            right: -99px;
+            width: 100vw;
+        }
+        #notification_click_icon ~ .dphSearch.active {
+            position: relative;
+            z-index: 0;
+        }
+    }
+</style>
+
+
+
+
+
+
+            
+            
+                
+                
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<div id='navFlyout?' class='dphFlyoutItem dphDevConsoleLinkTopBar dphButton'>
+    <span class='dphConsole dphLink'>?</span>
+    <div class='dphDropdownWrap'>
+        <nav class='dphDropdown accrItem'>
+            <div class='dpIconArrow accrHandle'></div>
+            
+            
+            
+                
+                    <ul class='dphDropdownList'>
+                        <li class='dphdItem'><a href='/support/'>Support</a></li>
+                        <li class='dphdItem'><a href='/documentation/'>Docs</a></li>
+                        <li class='dphdItem'><a href='https://forums.developer.amazon.com/index.html'>Forums</a></li>
+                        <li class='dphdItem'><a href='/support/contact-us'>Contact Us</a></li>
+                    </ul>
+                
+            
+        </nav>
+    </div>
+</div>
+
+                
+            
+
+        </div>
+    </div>
+
+    <div class='dphNavigation accordion' data-accr_active_width='327'>
+        <div class='dphnWrap'>
+            
+
+
+
+
+
+
+
+    
+
+<div class='dphUserInfo'>
+    
+        
+            <a class="dphLink" href="/settings/console/registration?return_to=/blogs/appstore/feed/entries">Sign In</a>
+        
+        
+    
+</div>
+            
+
+
+
+
+
+
+    
+    
+        <a href="/home.html" class='dphConsole dphLink'>Developer Console</a>
+    
+
+            
+
+
+
+
+
+<nav class="dpPrimaryNav">
+    <ul class="dppnItems">
+        
+            
+                
+                    
+                    
+                    
+                        
+                    
+                
+                <li class="dppnItem  accrItem">
+                    
+                        
+                            <a href="/apps-and-games/devices" class="dppnLink">
+                                Devices
+                            </a>
+                        
+                        
+                    
+                    
+                        <div class='dpIconArrow accrHandle'></div>
+                        <div class='dppnFlyoutWrap'>
+                            <div class='dppnSecondaryNavWrap'>
+                                <ul class="dppnFlyout dppnSecondaryNav">
+                                    
+                                        
+                                            
+                                            
+                                                
+                                            
+                                        
+                                        <li class="dppnfItem  accrItem">
+                                            
+                                                
+                                                    <a href="/apps-and-games/fire-tv" class="dppnfLink">
+                                                        <span class="dppnfTitle">Amazon Fire TV</span>
+                                                        <span class="dppnfSubtitle"></span>
+                                                    </a>
+                                                
+                                                
+                                            
+                                            
+                                        </li>
+                                    
+                                        
+                                            
+                                            
+                                                
+                                            
+                                        
+                                        <li class="dppnfItem  accrItem">
+                                            
+                                                
+                                                    <a href="/apps-and-games/fire-tablets" class="dppnfLink">
+                                                        <span class="dppnfTitle">Fire tablet</span>
+                                                        <span class="dppnfSubtitle"></span>
+                                                    </a>
+                                                
+                                                
+                                            
+                                            
+                                        </li>
+                                    
+                                        
+                                            
+                                            
+                                                
+                                            
+                                        
+                                        <li class="dppnfItem  accrItem">
+                                            
+                                                
+                                                    <a href="/apps-and-games/appstore-on-windows-11" class="dppnfLink">
+                                                        <span class="dppnfTitle">Appstore on<br>Windows 11</span>
+                                                        <span class="dppnfSubtitle"></span>
+                                                    </a>
+                                                
+                                                
+                                            
+                                            
+                                        </li>
+                                     
+                                </ul>
+                            </div>
+                        </div>
+                    
+                </li>        
+            
+        
+            
+                
+                    
+                    
+                    
+                        
+                    
+                
+                <li class="dppnItem  accrItem">
+                    
+                        
+                            <a href="/apps-and-games/services-and-apis" class="dppnLink">
+                                Engage
+                            </a>
+                        
+                        
+                    
+                    
+                </li>        
+            
+        
+            
+                
+                    
+                    
+                    
+                        
+                    
+                
+                <li class="dppnItem  accrItem">
+                    
+                        
+                            <a href="/apps-and-games/services-and-apis/monetization" class="dppnLink">
+                                Monetize
+                            </a>
+                        
+                        
+                    
+                    
+                </li>        
+            
+        
+            
+                
+                    
+                    
+                    
+                        
+                    
+                
+                <li class="dppnItem  accrItem">
+                    
+                        
+                            <a href="/apps-and-games/test" class="dppnLink">
+                                Test
+                            </a>
+                        
+                        
+                    
+                    
+                </li>        
+            
+        
+            
+                
+                    
+                    
+                    
+                        
+                    
+                
+                <li class="dppnItem  accrItem">
+                    
+                        
+                            <a href="/docs/app-submission/getting-started.html" class="dppnLink">
+                                Submit
+                            </a>
+                        
+                        
+                    
+                    
+                        <div class='dpIconArrow accrHandle'></div>
+                        <div class='dppnFlyoutWrap'>
+                            <div class='dppnSecondaryNavWrap'>
+                                <ul class="dppnFlyout dppnSecondaryNav">
+                                    
+                                        
+                                            
+                                            
+                                                
+                                            
+                                        
+                                        <li class="dppnfItem  accrItem">
+                                            
+                                                
+                                                    <a href="/docs/app-submission/presubmission-checklist.html" class="dppnfLink">
+                                                        <span class="dppnfTitle">Pre-submission checklist</span>
+                                                        <span class="dppnfSubtitle"></span>
+                                                    </a>
+                                                
+                                                
+                                            
+                                            
+                                        </li>
+                                    
+                                        
+                                            
+                                            
+                                                
+                                            
+                                        
+                                        <li class="dppnfItem  accrItem">
+                                            
+                                                
+                                                    <a href="/docs/app-submission/submitting-apps-to-amazon-appstore.html" class="dppnfLink">
+                                                        <span class="dppnfTitle">Step-by-step guides</span>
+                                                        <span class="dppnfSubtitle"></span>
+                                                    </a>
+                                                
+                                                
+                                            
+                                            
+                                        </li>
+                                    
+                                        
+                                            
+                                            
+                                                
+                                            
+                                        
+                                        <li class="dppnfItem  accrItem">
+                                            
+                                                
+                                                    <a href="/docs/app-submission-api/overview.html" class="dppnfLink">
+                                                        <span class="dppnfTitle">App Submission API</span>
+                                                        <span class="dppnfSubtitle"></span>
+                                                    </a>
+                                                
+                                                
+                                            
+                                            
+                                        </li>
+                                     
+                                </ul>
+                            </div>
+                        </div>
+                    
+                </li>        
+            
+        
+            
+                
+                    
+                    
+                    
+                        
+                    
+                
+                <li class="dppnItem  accrItem">
+                    
+                        
+                            <a href="/documentation" class="dppnLink">
+                                Docs
+                            </a>
+                        
+                        
+                    
+                    
+                        <div class='dpIconArrow accrHandle'></div>
+                        <div class='dppnFlyoutWrap'>
+                            <div class='dppnSecondaryNavWrap'>
+                                <ul class="dppnFlyout dppnSecondaryNav">
+                                    
+                                        
+                                            
+                                            
+                                                
+                                            
+                                        
+                                        <li class="dppnfItem  accrItem">
+                                            
+                                                
+                                                
+                                                    <span class="dppnfLink">
+                                                        <span class="dppnfTitle">Amazon Fire TV</span>
+                                                        <span class="dppnfSubtitle"></span>
+                                                    </span>
+                                                
+                                            
+                                            
+                                                <div class='dpIconArrow accrHandle'></div>
+                                                <div class='dppnLevel3NavWrap'>
+                                                    <ul class="dppnFlyout dppnLevel3Nav">
+                                                        
+                                                            
+                                                                
+                                                                
+                                                                    
+                                                                
+                                                            
+                                                            <li class="dppnfItem ">
+                                                                
+                                                                    
+                                                                        <a href="/docs/fire-tv/device-specifications.html" class="dppnfLink">
+                                                                            <span class="dppnfTitle">Device specifications</span>
+                                                                            <span class="dppnfSubtitle"></span>
+                                                                        </a>
+                                                                    
+                                                                    
+                                                                
+                                                            </li>
+                                                        
+                                                            
+                                                                
+                                                                
+                                                                    
+                                                                
+                                                            
+                                                            <li class="dppnfItem ">
+                                                                
+                                                                    
+                                                                        <a href="/docs/fire-tv/getting-started-developing-apps-and-games.html" class="dppnfLink">
+                                                                            <span class="dppnfTitle">Getting started</span>
+                                                                            <span class="dppnfSubtitle"></span>
+                                                                        </a>
+                                                                    
+                                                                    
+                                                                
+                                                            </li>
+                                                         
+                                                    </ul>
+                                                </div>
+                                            
+                                        </li>
+                                    
+                                        
+                                            
+                                            
+                                                
+                                            
+                                        
+                                        <li class="dppnfItem  accrItem">
+                                            
+                                                
+                                                
+                                                    <span class="dppnfLink">
+                                                        <span class="dppnfTitle">Fire tablet</span>
+                                                        <span class="dppnfSubtitle"></span>
+                                                    </span>
+                                                
+                                            
+                                            
+                                                <div class='dpIconArrow accrHandle'></div>
+                                                <div class='dppnLevel3NavWrap'>
+                                                    <ul class="dppnFlyout dppnLevel3Nav">
+                                                        
+                                                            
+                                                                
+                                                                
+                                                                    
+                                                                
+                                                            
+                                                            <li class="dppnfItem ">
+                                                                
+                                                                    
+                                                                        <a href="/docs/fire-tablets/ft-device-specifications.html" class="dppnfLink">
+                                                                            <span class="dppnfTitle">Device specifications</span>
+                                                                            <span class="dppnfSubtitle"></span>
+                                                                        </a>
+                                                                    
+                                                                    
+                                                                
+                                                            </li>
+                                                        
+                                                            
+                                                                
+                                                                
+                                                                    
+                                                                
+                                                            
+                                                            <li class="dppnfItem ">
+                                                                
+                                                                    
+                                                                        <a href="/docs/fire-tablets/ft-get-started.html" class="dppnfLink">
+                                                                            <span class="dppnfTitle">Getting started</span>
+                                                                            <span class="dppnfSubtitle"></span>
+                                                                        </a>
+                                                                    
+                                                                    
+                                                                
+                                                            </li>
+                                                         
+                                                    </ul>
+                                                </div>
+                                            
+                                        </li>
+                                    
+                                        
+                                            
+                                            
+                                                
+                                            
+                                        
+                                        <li class="dppnfItem  accrItem">
+                                            
+                                                
+                                                    <a href="/docs/fire-tv/fire-os-overview.html" class="dppnfLink">
+                                                        <span class="dppnfTitle">Fire OS</span>
+                                                        <span class="dppnfSubtitle"></span>
+                                                    </a>
+                                                
+                                                
+                                            
+                                            
+                                        </li>
+                                    
+                                        
+                                            
+                                            
+                                                
+                                            
+                                        
+                                        <li class="dppnfItem  accrItem">
+                                            
+                                                
+                                                    <a href="/docs/in-app-purchasing/iap-overview.html" class="dppnfLink">
+                                                        <span class="dppnfTitle">In-app purchasing</span>
+                                                        <span class="dppnfSubtitle"></span>
+                                                    </a>
+                                                
+                                                
+                                            
+                                            
+                                        </li>
+                                    
+                                        
+                                            
+                                            
+                                                
+                                            
+                                        
+                                        <li class="dppnfItem  accrItem">
+                                            
+                                                
+                                                    <a href="/docs/apps-and-games/sdk-downloads.html" class="dppnfLink">
+                                                        <span class="dppnfTitle">SDK Downloads</span>
+                                                        <span class="dppnfSubtitle"></span>
+                                                    </a>
+                                                
+                                                
+                                            
+                                            
+                                        </li>
+                                     
+                                </ul>
+                            </div>
+                        </div>
+                    
+                </li>        
+            
+        
+            
+                
+                    
+                    
+                    
+                        
+                    
+                
+                <li class="dppnItem  accrItem">
+                    
+                        
+                            <a href="/apps-and-games/blogs" class="dppnLink">
+                                Blog
+                            </a>
+                        
+                        
+                    
+                    
+                </li>        
+            
+        
+    </ul>
+</nav>
+            
+            
+                
+                
+                    
+
+
+
+
+
+
+
+<nav class="dpPrimaryNav dphDevConsoleLinkNavBar">
+    <ul class="dppnItems">
+        <li class="dppnItem accrItem">
+            <span class='dppnLink'>Support</span>
+            <div class="dpIconArrow accrHandle"></div>
+            <div class="dppnFlyoutWrap">
+                <div class="dppnSecondaryNavWrap">
+                    <ul class='dppnFlyout dppnSecondaryNav'>
+                        
+                        
+                            
+                                <li class='dppnfItem accrItem'><a class="dppnfLink" href='/support/'><span class="dppnfTitle">Support</span></a></li>
+                                <li class='dppnfItem accrItem'><a class="dppnfLink" href='/documentation/'><span class="dppnfTitle">Docs</span></a></li>
+                                <li class='dppnfItem accrItem'><a class="dppnfLink" href='https://forums.developer.amazon.com/index.html'><span class="dppnfTitle">Forums</span></a></li>
+                                <li class='dppnfItem accrItem'><a class="dppnfLink" href='/support/contact-us'><span class="dppnfTitle">Contact Us</span></a></li>
+                            
+                        
+                    </ul>
+                </div>
+            </div>
+        </li>
+    </ul>
+</nav>
+                
+            
+        </div>
+    </div>
+</header>
+<div id='dpHeaderPlaceholder'></div>
+
+
+<script>
+    (function(){
+        //Set placeholder height as soon as possible to eliminate page jump
+        "use strict";
+
+        var setHeaderPlaceholderHeight = function(header){
+            var placeholder = document.getElementById('dpHeaderPlaceholder');
+            var headerHeight = header[0].offsetHeight + "px";
+            placeholder.style.height = headerHeight;
+        }
+
+        var checkForHeader = function(){
+            var header = document.querySelectorAll('.dpHeader');
+            if(header.length){
+                setHeaderPlaceholderHeight(header);
+                window.clearInterval(checkForHeaderInterval);
+            }
+        }
+
+        var checkForHeaderInterval = window.setInterval(checkForHeader, 10);
+        checkForHeader();   //Run once immediately
+    }());
+</script>
+        <script>
+(function(f,h,Q,E){function F(a){u&&u.tag&&u.tag(q(":","aui",a))}function v(a,b){u&&u.count&&u.count("aui:"+a,0===b?0:b||(u.count("aui:"+a)||0)+1)}function m(a){try{return a.test(navigator.userAgent)}catch(b){return!1}}function x(a,b,c){a.addEventListener?a.addEventListener(b,c,!1):a.attachEvent&&a.attachEvent("on"+b,c)}function q(a,b,c,e){b=b&&c?b+a+c:b||c;return e?q(a,b,e):b}function G(a,b,c){try{Object.defineProperty(a,b,{value:c,writable:!1})}catch(e){a[b]=c}return c}function ua(a,b,c){var e=
+c=a.length,g=function(){e--||(R.push(b),S||(setTimeout(ca,0),S=!0))};for(g();c--;)da[a[c]]?g():(z[a[c]]=z[a[c]]||[]).push(g)}function va(a,b,c,e,g){var d=h.createElement(a?"script":"link");x(d,"error",e);g&&x(d,"load",g);a?(d.type="text/javascript",d.async=!0,c&&/AUIClients|images[/]I/.test(b)&&d.setAttribute("crossorigin","anonymous"),d.src=b):(d.rel="stylesheet",d.href=b);h.getElementsByTagName("head")[0].appendChild(d)}function ea(a,b){return function(c,e){function g(){va(b,c,d,function(b){T?v("resource_unload"):
+d?(d=!1,v("resource_retry"),g()):(v("resource_error"),a.log("Asset failed to load: "+c));b&&b.stopPropagation?b.stopPropagation():f.event&&(f.event.cancelBubble=!0)},e)}if(fa[c])return!1;fa[c]=!0;v("resource_count");var d=!0;return!g()}}function wa(a,b,c){for(var e={name:a,guard:function(c){return b.guardFatal(a,c)},guardTime:function(a){return b.guardTime(a)},logError:function(c,d,e){b.logError(c,d,e,a)}},g=[],d=0;d<c.length;d++)H.hasOwnProperty(c[d])&&(g[d]=U.hasOwnProperty(c[d])?U[c[d]](H[c[d]],
+e):H[c[d]]);return g}function A(a,b,c,e,g){return function(d,h){function n(){var a=null;e?a=h:"function"===typeof h&&(p.start=w(),a=h.apply(f,wa(d,k,l)),p.end=w());if(b){H[d]=a;a=d;for(da[a]=!0;(z[a]||[]).length;)z[a].shift()();delete z[a]}p.done=!0}var k=g||this;"function"===typeof d&&(h=d,d=E);b&&(d=d?d.replace(ha,""):"__NONAME__",V.hasOwnProperty(d)&&k.error(q(", reregistered by ",q(" by ",d+" already registered",V[d]),k.attribution),d),V[d]=k.attribution);for(var l=[],m=0;m<a.length;m++)l[m]=
+a[m].replace(ha,"");var p=B[d||"anon"+ ++xa]={depend:l,registered:w(),namespace:k.namespace};d&&ya.hasOwnProperty(d);c?n():ua(l,k.guardFatal(d,n),d);return{decorate:function(a){U[d]=k.guardFatal(d,a)}}}}function ia(a){return function(){var b=Array.prototype.slice.call(arguments);return{execute:A(b,!1,a,!1,this),register:A(b,!0,a,!1,this)}}}function W(a,b){return function(c,e){e||(e=c,c=E);var g=this.attribution;return function(){t.push(b||{attribution:g,name:c,logLevel:a});var d=e.apply(this,arguments);
+t.pop();return d}}}function I(a,b){this.load={js:ea(this,!0),css:ea(this)};G(this,"namespace",b);G(this,"attribution",a)}function ja(){h.body?r.trigger("a-bodyBegin"):setTimeout(ja,20)}function C(a,b){a.className=X(a,b)+" "+b}function X(a,b){return(" "+a.className+" ").split(" "+b+" ").join(" ").replace(/^ | $/g,"")}function ka(a){try{return a()}catch(b){return!1}}function J(){if(K){var a={w:f.innerWidth||n.clientWidth,h:f.innerHeight||n.clientHeight};5<Math.abs(a.w-Y.w)||50<a.h-Y.h?(Y=a,L=4,(a=k.mobile||
+k.tablet?450<a.w&&a.w>a.h:1250<=a.w)?C(n,"a-ws"):n.className=X(n,"a-ws")):0<L&&(L--,la=setTimeout(J,16))}}function za(a){(K=a===E?!K:!!a)&&J()}function Aa(){return K}function ma(){D.forEach(function(a){F(a)})}function na(a,b,c){if(b){a=m(/Chrome/i)&&!m(/Edge/i)&&!m(/OPR/i)&&!a.capabilities.isAmazonApp&&!m(new RegExp(Z+"bwv"+Z+"b"));var e="sw:browser:"+c+":";b.browser&&a&&(D.push(e+"supported"),b.browser.action(e,c));!a&&b.browser&&D.push(e+"unsupported")}}"use strict";var M=Q.now=Q.now||function(){return+new Q},
+w=function(a){return a&&a.now?a.now.bind(a):M}(f.performance),N=w(),ya={},p=f.AmazonUIPageJS||f.P;if(p&&p.when&&p.register){N=[];for(var l=h.currentScript;l;l=l.parentElement)l.id&&N.push(l.id);return p.log("A copy of P has already been loaded on this page.","FATAL",N.join(" "))}var u=f.ue;F();F("aui_build_date:3.21.9-2021-12-28");var R=[],Ba=[],S=!1;var ca=function(){for(var a=setTimeout(ca,0),b=M();Ba.length||R.length;)if(R.shift()(),50<M()-b)return;clearTimeout(a);S=!1};var da={},z={},fa={},T=
+!1;x(f,"beforeunload",function(){T=!0;setTimeout(function(){T=!1},1E4)});var ha=/^prv:/,V={},H={},U={},B={},xa=0,Z=String.fromCharCode(92),t=[],oa=!0,pa=f.onerror;f.onerror=function(a,b,c,e,g){g&&"object"===typeof g||(g=Error(a,b,c),g.columnNumber=e,g.stack=b||c||e?q(Z,g.message,"at "+q(":",b,c,e)):E);var d=t.pop()||{};g.attribution=q(":",g.attribution||d.attribution,d.name);g.logLevel=d.logLevel;g.attribution&&console&&console.log&&console.log([g.logLevel||"ERROR",a,"thrown by",g.attribution].join(" "));
+t=[];pa&&(d=[].slice.call(arguments),d[4]=g,pa.apply(f,d))};I.prototype={logError:function(a,b,c,e){b={message:b,logLevel:c||"ERROR",attribution:q(":",this.attribution,e)};if(f.ueLogError)return f.ueLogError(a||b,a?b:null),!0;console&&console.error&&(console.log(b),console.error(a));return!1},error:function(a,b,c,e){a=Error(q(":",e,a,c));a.attribution=q(":",this.attribution,b);throw a;},guardError:W(),guardFatal:W("FATAL"),guardCurrent:function(a){var b=t[t.length-1];return b?W(b.logLevel,b).call(this,
+a):a},guardTime:function(a){var b=t[t.length-1],c=b&&b.name;return c&&c in B?function(){var b=w(),g=a.apply(this,arguments);B[c].async=(B[c].async||0)+w()-b;return g}:a},log:function(a,b,c){return this.logError(null,a,b,c)},declare:A([],!0,!0,!0),register:A([],!0),execute:A([]),AUI_BUILD_DATE:"3.21.9-2021-12-28",when:ia(),now:ia(!0),trigger:function(a,b,c){var e=M();this.declare(a,{data:b,pageElapsedTime:e-(f.aPageStart||NaN),triggerTime:e});c&&c.instrument&&O.when("prv:a-logTrigger").execute(function(b){b(a)})},
+handleTriggers:function(){this.log("handleTriggers deprecated")},attributeErrors:function(a){return new I(a)},_namespace:function(a,b){return new I(a,b)},setPriority:function(a){oa?oa=!1:this.log("setPriority only accept the first call.")}};var r=G(f,"AmazonUIPageJS",new I);var O=r._namespace("PageJS","AmazonUI");O.declare("prv:p-debug",B);r.declare("p-recorder-events",[]);r.declare("p-recorder-stop",function(){});G(f,"P",r);ja();if(h.addEventListener){var qa;h.addEventListener("DOMContentLoaded",
+qa=function(){r.trigger("a-domready");h.removeEventListener("DOMContentLoaded",qa,!1)},!1)}var n=h.documentElement,aa=function(){var a=["O","ms","Moz","Webkit"],b=h.createElement("div");return{testGradients:function(){return!0},test:function(c){var e=c.charAt(0).toUpperCase()+c.substr(1);c=(a.join(e+" ")+e+" "+c).split(" ");for(e=c.length;e--;)if(""===b.style[c[e]])return!0;return!1},testTransform3d:function(){return!0}}}();p=n.className;var ra=/(^| )a-mobile( |$)/.test(p),sa=/(^| )a-tablet( |$)/.test(p),
+k={audio:function(){return!!h.createElement("audio").canPlayType},video:function(){return!!h.createElement("video").canPlayType},canvas:function(){return!!h.createElement("canvas").getContext},svg:function(){return!!h.createElementNS&&!!h.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect},offline:function(){return navigator.hasOwnProperty&&navigator.hasOwnProperty("onLine")&&navigator.onLine},dragDrop:function(){return"draggable"in h.createElement("span")},geolocation:function(){return!!navigator.geolocation},
+history:function(){return!(!f.history||!f.history.pushState)},webworker:function(){return!!f.Worker},autofocus:function(){return"autofocus"in h.createElement("input")},inputPlaceholder:function(){return"placeholder"in h.createElement("input")},textareaPlaceholder:function(){return"placeholder"in h.createElement("textarea")},localStorage:function(){return"localStorage"in f&&null!==f.localStorage},orientation:function(){return"orientation"in f},touch:function(){return"ontouchend"in h},gradients:function(){return aa.testGradients()},
+hires:function(){var a=f.devicePixelRatio&&1.5<=f.devicePixelRatio||f.matchMedia&&f.matchMedia("(min-resolution:144dpi)").matches;v("hiRes"+(ra?"Mobile":sa?"Tablet":"Desktop"),a?1:0);return a},transform3d:function(){return aa.testTransform3d()},touchScrolling:function(){return m(/Windowshop|android|OS ([5-9]|[1-9][0-9]+)(_[0-9]{1,2})+ like Mac OS X|SOFTWARE=([5-9]|[1-9][0-9]+)(.[0-9]{1,2})+.*DEVICE=iPhone|Chrome|Silk|Firefox|Trident.+?; Touch/i)},ios:function(){return m(/OS [1-9][0-9]*(_[0-9]*)+ like Mac OS X/i)&&
+!m(/trident|Edge/i)},android:function(){return m(/android.([1-9]|[L-Z])/i)&&!m(/trident|Edge/i)},mobile:function(){return ra},tablet:function(){return sa},rtl:function(){return"rtl"===n.dir}};for(l in k)k.hasOwnProperty(l)&&(k[l]=ka(k[l]));for(var ba="textShadow textStroke boxShadow borderRadius borderImage opacity transform transition".split(" "),P=0;P<ba.length;P++)k[ba[P]]=ka(function(){return aa.test(ba[P])});var K=!0,la=0,Y={w:0,h:0},L=4;J();x(f,"resize",function(){clearTimeout(la);L=4;J()});
+var ta={getItem:function(a){try{return f.localStorage.getItem(a)}catch(b){}},setItem:function(a,b){try{return f.localStorage.setItem(a,b)}catch(c){}}};n.className=X(n,"a-no-js");C(n,"a-js");!m(/OS [1-8](_[0-9]*)+ like Mac OS X/i)||f.navigator.standalone||m(/safari/i)||C(n,"a-ember");p=[];for(l in k)k.hasOwnProperty(l)&&k[l]&&p.push("a-"+l.replace(/([A-Z])/g,function(a){return"-"+a.toLowerCase()}));C(n,p.join(" "));n.setAttribute("data-aui-build-date","3.21.9-2021-12-28");r.register("p-detect",function(){return{capabilities:k,
+localStorage:k.localStorage&&ta,toggleResponsiveGrid:za,responsiveGridEnabled:Aa}});m(/UCBrowser/i)||k.localStorage&&C(n,ta.getItem("a-font-class"));r.declare("a-event-revised-handling",!1);try{var y=navigator.serviceWorker}catch(a){F("sw:nav_err")}y&&(x(y,"message",function(a){a&&a.data&&v(a.data.k,a.data.v)}),y.controller&&y.controller.postMessage("MSG-RDY"));var D=[];(function(a){var b=a.reg,c=a.unreg;y&&y.getRegistrations?(O.when("A").execute(function(a){na(a,c,"unregister")}),x(f,"load",function(){O.when("A").execute(function(a){na(a,
+b,"register");ma()})})):(b&&b.browser&&D.push("sw:browser:register:unsupported"),c&&c.browser&&D.push("sw:browser:unregister:unsupported"),ma())})({reg:{},unreg:{}});r.declare("a-fix-event-off",!1);v("pagejs:pkgExecTime",w()-N)})(window,document,Date);
+  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://images-na.ssl-images-amazon.com/images/I/61XKxrBtDVL._RC|11Y+5x+kkTL.js,51106gSDnJL.js,11yKORv-GTL.js,11giXtZCwVL.js,01+z+uIeJ-L.js,01VRMV3FBdL.js,21SDJtBU-PL.js,012FVc3131L.js,11rRjDLdAVL.js,51H19hJRYrL.js,11kWu3cNjYL.js,11tMohjWmVL.js,11OREnu1epL.js,11wcWdhrnDL.js,21ssiLNIZvL.js,0190vxtlzcL.js,51+N26vFcBL.js,01JYHc2oIlL.js,31R9m8rig5L.js,01ezj5Rkz1L.js,11+RxVdhNcL.js,31o2NGTXThL.js,01rpauTep4L.js,01KFkXJxMTL.js_.js?AUIClients/AmazonUI');
+  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://images-na.ssl-images-amazon.com/images/I/61vjHh7NVxL.js?AUIClients/DeXWebsiteAUIAssets');
+</script>
+
+        <div class="content-section">
+            
+            <?xml version="1.0" encoding='utf-8'?>
+<?xml-stylesheet type="text/xsl" href="/blogs/assets/atom.xsl" media="screen"?><feed xmlns="http://www.w3.org/2005/Atom">
+    <title type="html">Appstore Blogs</title>
+    <subtitle type="html">Appstore DeveloperBlog</subtitle>
+    <id>/blogs/appstore/feed/entries/atom</id>
+            <link rel="self" type="application/atom+xml" href="/blogs/appstore/feed/entries/atom" />
+        <link rel="alternate" type="text/html" href="/blogs/appstore/" />
+        <updated>2022-06-22T23:20:48+00:00</updated>
+    <generator uri="http://roller.apache.org" version="${project.version}">Apache Roller</generator>
+        <entry>
+        <id>/blogs/appstore/post/a1c4daaa-fd6d-4943-959f-3b84e35f6b9c/cn-customers-can-now-preview-the-amazon-appstore-on-windows-11</id>
+        <title type="html">客户现在可以在Windows 11上预览亚马逊应用商店（发布时仅在美国提供）</title>
+        <author><name>Nanaho Nishiyama</name></author>
+        <link rel="alternate" type="text/html" href="/blogs/appstore/post/a1c4daaa-fd6d-4943-959f-3b84e35f6b9c/cn-customers-can-now-preview-the-amazon-appstore-on-windows-11"/>
+        <published>2022-03-21T22:13:29+00:00</published>
+        <updated>2022-03-21T22:13:29+00:00</updated> 
+        <category term="Appstore" label="Appstore" />
+        <category term="China" scheme="http://roller.apache.org/ns/tags/" />
+        <category term="Windows 11" scheme="http://roller.apache.org/ns/tags/" />
+        <summary type="html">&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;https://m.media-amazon.com/images/G/01/mobile-apps/devportal2/content/blog_msftappstore03_954x240.png&quot; /&gt;&lt;/p&gt; 
+&lt;p&gt;Windows 11上的新一代亚马逊应用商店已经面世。&amp;nbsp; 亚马逊应用商店的公开预览版现在已可供美国Windows 11客户使用。&lt;/p&gt;</summary>
+        <content type="html">&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;https://m.media-amazon.com/images/G/01/mobile-apps/devportal2/content/blog_msftappstore03_954x240.png&quot; /&gt;&lt;/p&gt; 
+&lt;p&gt;Windows 11上的新一代亚马逊应用商店已经面世。&amp;nbsp; 亚马逊应用商店的公开预览版现在已可供美国Windows 11客户使用。&amp;nbsp;该预览版包含了1000多个应用，其中包括Khan Academy Kids、Audible、《地铁跑酷》和《最终幻想： 勇气启示录 幻影战争》等力作，并且随着亚马逊继续致力于推出新的增强功能，还会增添更多应用。&amp;nbsp; 亚马逊和Microsoft都在努力从图形、输入控件和外形规格等方面改进功能，以方便开发者将应用移植到Windows设备上。&lt;br /&gt; &lt;br /&gt; 参与此计划不需要额外的操作或工作，但是开发者可以利用下面提供的视频教程来测试应用与Windows 11的兼容性。&lt;br /&gt; &amp;nbsp;&lt;/p&gt; 
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;测试应用与Windows 11的兼容性&lt;/em&gt;&lt;/strong&gt;&lt;br /&gt; 请按照下面的操作方法视频，学习如何在&lt;a href=&quot;https://docs.microsoft.com/en-us/windows/android/wsa/&quot;&gt;适用于Android的Windows子系统&lt;/a&gt;上测试应用。&amp;nbsp; 如果能够安装该应用，且主要功能可在Windows 11设备上正常运行，则暂时无需采取进一步措施。&amp;nbsp; 如果在测试过程中遇到问题，请联系我们的开发者支持团队，并通过&lt;a href=&quot;https://developer.amazon.com/zh/support/contact-us?sc_channel=website&amp;amp;sc_publisher=devportal&amp;amp;sc_campaign=Conversion_Contact-Us&amp;amp;sc_assettype=conversion&amp;amp;sc_team=us&amp;amp;sc_traffictype=organic&amp;amp;sc_country=united-states&amp;amp;sc_segment=all&amp;amp;sc_itrackingcode=100020_us_website&amp;amp;sc_detail=dp-support-page&quot;&gt;“联系我们”表单&lt;/a&gt;分享这一经历。&amp;nbsp; 这些宝贵的反馈意见会有助于我们优先考虑该计划需要哪些新增功能和增强功能。&lt;br /&gt; &amp;nbsp;&lt;/p&gt; 
+&lt;p&gt;&lt;iframe allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;360&quot; src=&quot;//www.youtube.com/embed/z_ehadkRyzY&quot; width=&quot;640&quot;&gt;&lt;/iframe&gt;&lt;/p&gt; 
+&lt;p&gt;&amp;nbsp;&lt;/p&gt; 
+&lt;p&gt;更多信息会在Twitch上的FireSide Chat LIVE（仅限英文）期间分享，此次直播的链接为&lt;a href=&quot;http://twitch.tv/amazonappdev&quot;&gt;twitch.tv/amazonappdev&lt;/a&gt;，时间为2月23日星期三[北京时间凌晨2点]。&amp;nbsp; 亚马逊的开发者宣讲师会提供Windows 11上Android应用的演示。&lt;br /&gt; &lt;br /&gt; 随着该计划继续取得进展，会公布有关一般可用性的详细信息。&amp;nbsp; 在&lt;a href=&quot;https://m.amazonappservices.com/developer-interest&quot;&gt;此处&lt;/a&gt;注册，即可随着该计划取得进展而接收更新；如果您尚未将应用发布到亚马逊应用商店，请立即&lt;a href=&quot;https://developer.amazon.com/zh/docs/app-submission/getting-started.html&quot;&gt;提交应用&lt;/a&gt;。&lt;/p&gt; 
+&lt;p&gt;&amp;nbsp;&lt;/p&gt; 
+&lt;hr /&gt; 
+&lt;p&gt;&lt;br /&gt; &lt;strong&gt;常见问题解答&lt;/strong&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;strong&gt;1) 作为开发者，我如何才能让自己的应用列入目录？&lt;/strong&gt;&lt;br /&gt; 随着测试能力不断拓展，亚马逊应用商店将会不断测试新的应用，以便在这一预览阶段将它们加入进来。如果您现在不是在为亚马逊应用商店开发，那么最佳着手点就是&lt;a href=&quot;https://developer.amazon.com/zh/docs/app-submission/getting-started.html&quot;&gt;提交您的应用&lt;/a&gt;来体验亚马逊应用商店的优势。&lt;br /&gt; &lt;br /&gt; &lt;strong&gt;2) 何时能达到一般可用性？&lt;/strong&gt;&lt;br /&gt; 亚马逊和Microsoft计划在2022年分享更多有关一般可用性的详细信息。&lt;br /&gt; &lt;br /&gt; &lt;strong&gt;3) 亚马逊应用商店会不会在全球范围内的Windows 11设备上提供？&lt;/strong&gt;&lt;br /&gt; 目前仅在美国提供，但以后会加入其他地区。&lt;br /&gt; &lt;br /&gt; &lt;strong&gt;4) 我如何知道自己的应用在不在随公开预览版一起发布的1000多个应用之列？&lt;/strong&gt;&lt;br /&gt; 如果预览版中包含您的应用，则您会在亚马逊开发者门户中启用的设备下看到“Windows设备”选项卡。如果没有看到此选项，则说明该计划在这一阶段没有包含您的应用，但是随着该计划取得进展，我们会继续向应用商店添加应用。&lt;br /&gt; &lt;br /&gt; &lt;strong&gt;5) 如何才能通过亚马逊应用商店在Windows 11设备上提供我的应用？&lt;/strong&gt;&lt;br /&gt; 我们目前不接受将Windows 11设备作为目标的提交。随着该计划取得进展，我们会继续向应用商店添加已验证的应用。&lt;br /&gt; &lt;br /&gt; &lt;strong&gt;6) Android应用如何在Windows 11操作系统上运行？&lt;/strong&gt;&lt;br /&gt; 微软推出了适用于Android™️的Windows子系统(WSA)，为亚马逊应用商店及其目录提供支持。WSA包括Linux内核和基于Android开源项目(AOSP)版本11的Android操作系统，并作为亚马逊应用商店安装的一部分通过Microsoft Store分发。适用于Android™️的Windows子系统在Hyper-V虚拟机中运行，与适用于Linux的Windows子系统类似，并且了解如何将AOSP环境中应用的运行时和API映射到Windows图形层、内存缓冲区、输入模式、物理和虚拟设备以及传感器。&lt;br /&gt; &lt;br /&gt; &lt;strong&gt;7) 兼容什么样的设备硬件？&lt;/strong&gt;&lt;br /&gt; 请在&lt;a href=&quot;https://www.microsoft.com/en-us/windows/windows-11-specifications&quot;&gt;此处&lt;/a&gt;了解Windows 11规格、功能和电脑要求。&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>/blogs/appstore/post/cf766c5b-e80b-4087-97b2-3cf3f486ee7f/jp-customers-can-now-preview-the-amazon-appstore-on-windows-11</id>
+        <title type="html">Windows 11でAmazonアプリストアのプレビューが開始（ローンチ時は米国でのみ展開）</title>
+        <author><name>Nanaho Nishiyama</name></author>
+        <link rel="alternate" type="text/html" href="/blogs/appstore/post/cf766c5b-e80b-4087-97b2-3cf3f486ee7f/jp-customers-can-now-preview-the-amazon-appstore-on-windows-11"/>
+        <published>2022-03-21T22:06:36+00:00</published>
+        <updated>2022-03-21T22:06:36+00:00</updated> 
+        <category term="Appstore" label="Appstore" />
+        <category term="Japan" scheme="http://roller.apache.org/ns/tags/" />
+        <category term="Windows 11" scheme="http://roller.apache.org/ns/tags/" />
+        <summary type="html">&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;https://m.media-amazon.com/images/G/01/mobile-apps/devportal2/content/blog_msftappstore03_954x240.png&quot; /&gt;&lt;/p&gt; 
+&lt;p&gt;Windows 11におけるAmazonアプリストアのサポート計画は次の段階へと進み、&amp;nbsp; 米国のWindows 11ユーザー向けにAmazonアプリストアのパブリックプレビューが開始となりました。&amp;nbsp;&lt;/p&gt;</summary>
+        <content type="html">&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;https://m.media-amazon.com/images/G/01/mobile-apps/devportal2/content/blog_msftappstore03_954x240.png&quot; /&gt;&lt;/p&gt; 
+&lt;p&gt;Windows 11におけるAmazonアプリストアのサポート計画は次の段階へと進み、&amp;nbsp; 米国のWindows 11ユーザー向けにAmazonアプリストアのパブリックプレビューが開始となりました。&amp;nbsp; 現在のプレビュー版では、『Khan Academy Kids』『Audible』『Subway Surfers』『War of the Visions: Final Fantasy Brave Exvius』など1,000を超えるアプリを利用でき、 今後Amazonが機能を拡張するにしたがってアプリはさらに追加される予定です。&amp;nbsp; AmazonとMicrosoftは、開発者によるWindowsデバイスへのアプリの移植を容易にするため、グラフィックス・入力コントロール・フォームファクターなどの機能改善に引き続き取り組んでいきます。&lt;br /&gt; &lt;br /&gt; 本プログラムに参加するにあたり、追加作業は特に必要ありませんが、アプリとWindows 11の互換性をテストするには、以下のビデオチュートリアルをご参照ください。&lt;br /&gt; &amp;nbsp;&lt;/p&gt; 
+&lt;p&gt;&lt;strong&gt;アプリのWindows 11互換性テスト&lt;/strong&gt;&lt;br /&gt; 以下のビデオチュートリアルに従って、&lt;a href=&quot;https://docs.microsoft.com/ja-jp/windows/android/wsa/&quot;&gt;Android用Windowsサブシステム&lt;/a&gt;でアプリのテストを行います。&amp;nbsp; アプリをインストールでき、主な機能がWindows 11デバイスで動作すれば、現時点でそれ以上必要な作業はありません。&amp;nbsp; テスト中に問題が発生した場合は、&lt;a href=&quot;https://developer.amazon.com/ja/support/contact-us?sc_channel=website&amp;amp;sc_publisher=devportal&amp;amp;sc_campaign=Conversion_Contact-Us&amp;amp;sc_assettype=conversion&amp;amp;sc_team=us&amp;amp;sc_traffictype=organic&amp;amp;sc_country=united-states&amp;amp;sc_segment=all&amp;amp;sc_itrackingcode=100020_us_website&amp;amp;sc_detail=dp-support-page&quot;&gt;お問い合わせフォーム&lt;/a&gt;にその内容をご記入のうえ、開発者サポートチームにお問い合わせください。&amp;nbsp; 貴重なフィードバックとして、プログラムの新機能や機能拡張に優先順位を付ける際に役立てさせていただきます。&lt;br /&gt; &amp;nbsp;&lt;/p&gt; 
+&lt;p&gt;&lt;iframe allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;360&quot; src=&quot;//www.youtube.com/embed/z_ehadkRyzY&quot; width=&quot;640&quot;&gt;&lt;/iframe&gt;&lt;/p&gt; 
+&lt;p&gt;&amp;nbsp;&lt;/p&gt; 
+&lt;p&gt;詳細については、2月23日（水）午前3時（日本時間）にTwitch（&lt;a href=&quot;http://twitch.tv/amazonappdev&quot;&gt;twitch.tv/amazonappdev&lt;/a&gt;）で開催されたFireSide Chat LIVE（英語のみ）にて、&amp;nbsp; AmazonのデベロッパーエバンジェリストがWindows 11でAndroidアプリを実演しながら解説していますので、ご確認ください。&lt;br /&gt; &lt;br /&gt; 一般提供に関しては、今後進展がありましたら詳細をご案内いたします。&amp;nbsp; &lt;a href=&quot;https://m.amazonappservices.com/developer-interest&quot;&gt;こちら&lt;/a&gt;（英語のみ）からご登録いただくと、本プログラムの最新情報をお届けします。Amazonアプリストアのご利用がまだの場合は、まず&lt;a href=&quot;https://developer.amazon.com/ja/docs/app-submission/getting-started.html&quot;&gt;アプリの申請&lt;/a&gt;から始めてください。&lt;/p&gt; 
+&lt;p&gt;&amp;nbsp;&lt;/p&gt; 
+&lt;hr /&gt; 
+&lt;p&gt;&lt;br /&gt; &lt;strong&gt;よくある質問（FAQ）&lt;/strong&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;strong&gt;1）開発したアプリをカタログに追加するには、どうればよいですか？&lt;/strong&gt;&lt;br /&gt; Amazonアプリストアでは、テスト機能を拡張しながら、プレビュー段階で追加される新しいアプリのテストを進めています。まだAmazonアプリストアをご利用でない場合は、まず&lt;a href=&quot;https://developer.amazon.com/ja/docs/app-submission/getting-started.html&quot;&gt;アプリを申請&lt;/a&gt;してみることをお勧めします。&lt;br /&gt; &lt;br /&gt; &lt;strong&gt;2）一般提供はいつですか？&lt;/strong&gt;&lt;br /&gt; AmazonとMicrosoftは、2022年内に一般提供に関する詳細をご案内したいと考えています。&lt;br /&gt; &lt;br /&gt; &lt;strong&gt;3）Amazonアプリストアは世界中のWindows 11デバイスで利用できますか？&lt;/strong&gt;&lt;br /&gt; 現在のところ利用できるのは米国のみですが、今後はほかの地域でも利用可能になる予定です。&lt;br /&gt; &lt;br /&gt; &lt;strong&gt;4）パブリックプレビューでローンチされた1,000点以上のアプリに、自社・自分のアプリが含まれているかどうかは、どうすればわかりますか？&lt;/strong&gt;&lt;br /&gt; アプリがプレビューに含まれている場合、Amazon開発者ポータルに対象デバイスとして &lt;strong&gt;[Windowsデバイス]&lt;/strong&gt; タブが表示されます。このオプションが非表示の場合、現段階では含まれていないことを意味します。ただし、今後もプログラムの進行に応じてアプリは随時追加される予定です。&lt;br /&gt; &lt;br /&gt; &lt;strong&gt;5）Windows 11デバイス対象のアプリをAmazonアプリストアで公開するには、どうすればよいですか？&lt;/strong&gt;&lt;br /&gt; 現時点ではWindows 11デバイスを対象とする申請は受け付けていません。今後はプログラムの進行に応じて、アプリを追加していく予定です。&lt;br /&gt; &lt;br /&gt; &lt;strong&gt;6）Windows 11 OS上で、Androidアプリはどのように実行されますか？&lt;/strong&gt;&lt;br /&gt; MicrosoftがリリースしたAndroid™用Windowsサブシステム（WSA）により、Amazonアプリストアとそのカタログは利用可能となります。WSAは、Linuxカーネルと、Androidオープンソースプロジェクト（AOSP）バージョン11ベースのAndroid OSで構成されており、Microsoft StoreからAmazonアプリストアをインストールすると自動的にインストールされます。WSAは、Linux用Windowsサブシステムと同様、Hyper-V仮想マシンで実行され、AOSP環境のアプリのランタイムとAPIをWindowsグラフィックレイヤー、メモリバッファー、入力モード、物理デバイスと仮想デバイス、センサーにマッピングします。&lt;br /&gt; &lt;br /&gt; &lt;strong&gt;7）互換性のあるデバイスハードウェアについて教えてください。&lt;/strong&gt;&lt;br /&gt; Windows 11の仕様、機能、コンピューターの要件については、&lt;a href=&quot;https://www.microsoft.com/ja-jp/windows/windows-11-specifications&quot;&gt;こちら&lt;/a&gt;でご確認ください。&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>/blogs/appstore/post/ef317cae-db4a-426e-86c0-3233aa07070c/fire-tv-smart-tvs-now-available-in-japan</id>
+        <title type="html">Amazonとヤマダホールディングス、 日本国内初、Amazon Fire TV搭載の「スマートテレビ」を発表</title>
+        <author><name>Nanaho Nishiyama</name></author>
+        <link rel="alternate" type="text/html" href="/blogs/appstore/post/ef317cae-db4a-426e-86c0-3233aa07070c/fire-tv-smart-tvs-now-available-in-japan"/>
+        <published>2022-03-11T21:12:29+00:00</published>
+        <updated>2022-03-11T21:12:29+00:00</updated> 
+        <category term="Appstore" label="Appstore" />
+        <category term="Fire TV" scheme="http://roller.apache.org/ns/tags/" />
+        <category term="Japan" scheme="http://roller.apache.org/ns/tags/" />
+        <summary type="html">&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;https://m.media-amazon.com/images/G/01/mobile-apps/devportal2/content/blog_firetv_jp_red_954x240.png&quot; /&gt;&lt;/p&gt; 
+&lt;p&gt;～家電量販大手ヤマダホールディングスと、ストリーミングメディアプレーヤーのリーディングカンパニーであるAmazonが新しいテレビを実現～&lt;br /&gt; &lt;br /&gt; Amazonと株式会社ヤマダホールディングスは2022年2月17日（木）、両社の全面的な協力に基づき開発された、日本国内初、Fire TV搭載スマートテレビの販売を開始したことを発表しました。&lt;/p&gt;</summary>
+        <content type="html">&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;https://m.media-amazon.com/images/G/01/mobile-apps/devportal2/content/blog_firetv_jp_red_954x240.png&quot; /&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;strong&gt;～家電量販大手ヤマダホールディングスと、ストリーミングメディアプレーヤーのリーディングカンパニーであるAmazonが新しいテレビを実現～&lt;/strong&gt;&lt;br /&gt; &lt;br /&gt; Amazonと株式会社ヤマダホールディングスは2022年2月17日（木）、両社の全面的な協力に基づき開発された、日本国内初、Fire TV搭載スマートテレビ*&lt;sup&gt;1&lt;/sup&gt;の販売を開始したことを発表しました。&lt;br /&gt; &lt;br /&gt; 本製品は、人気を博しているAmazonのストリーミングメディアプレーヤー、Fire TVを搭載し、地上波・BS・CS・4Kの視聴だけでなくストリーミング動画の視聴*&lt;sup&gt;2&lt;/sup&gt;も可能なことに加えて、ホーム画面からお客様の好みに応じたコンテンツを直感的に選び、視聴することができるスマートテレビです*&lt;sup&gt;3&lt;/sup&gt;。&lt;br /&gt; &lt;br /&gt; 4K液晶テレビとHD液晶テレビの4機種で展開し、ヤマダホールディングスグループが独占販売権を有する「FUNAI」ブランドとして、ヤマダホールディングス限定で販売を開始します。&lt;br /&gt; &lt;br /&gt; 43インチ、50インチ、55インチの4K液晶テレビは2月17日から&lt;a href=&quot;http://www.amazon.co.jp/firetvfunai&quot;&gt;Amazon.co.jpのヤマダデンキ&lt;/a&gt;で先行予約特別価格での受付を開始し、3月5日（土）よりヤマダデンキグループ店頭並びにヤマダウェブコムで販売・出荷開始しました。32インチHD液晶テレビについては、4月末より店頭販売・出荷開始を予定しています。&lt;br /&gt; &lt;br /&gt; 本件に関する詳細は、&lt;a href=&quot;https://amazon-press.jp/Devices/Fire-TV/Press-release/amazon/jp/Devices/2022/FUNAI-Fire-TV-Smart-TV/&quot;&gt;Amazon Newsroom&lt;/a&gt;をご参照ください。&lt;/p&gt; 
+&lt;p&gt;&amp;nbsp;&lt;/p&gt; 
+&lt;hr /&gt; 
+&lt;p&gt;&lt;br /&gt; Fire TV対応アプリ・ゲームの開発については、 以下のリソースをご参照ください。&lt;/p&gt; 
+&lt;ul&gt; 
+ &lt;li&gt;デバイス仕様 
+  &lt;ul&gt; 
+   &lt;li&gt;&lt;a href=&quot;https://developer.amazon.com/ja/docs/fire-tv/device-specifications-fire-tv-edition-smart-tv.html&quot;&gt;デバイスの仕様：スマートTV&lt;/a&gt;&lt;/li&gt; 
+   &lt;li&gt;&lt;a href=&quot;https://developer.amazon.com/ja/docs/fire-tv/fire-tv-edition-faq.html&quot;&gt;スマートTVに関するよくある質問（FAQ）&lt;/a&gt;&lt;/li&gt; 
+   &lt;li&gt;&lt;a href=&quot;https://developer.amazon.com/ja/docs/fire-tv/device-specifications-comparison-table.html&quot;&gt;Fire TVデバイスの比較&lt;/a&gt;&lt;/li&gt; 
+  &lt;/ul&gt; &lt;/li&gt; 
+ &lt;li&gt;Alexa音声制御 
+  &lt;ul&gt; 
+   &lt;li&gt;&lt;a href=&quot;https://developer.amazon.com/ja/docs/fire-tv/mediasession-api-integration.html#integrating-with-mediasession-for-voice-enabled-media-playback&quot;&gt;Media Session API&lt;/a&gt;&lt;/li&gt; 
+   &lt;li&gt;&lt;a href=&quot;https://developer.amazon.com/ja/docs/video-skills-fire-tv-apps/introduction.html&quot;&gt;VSK（Video Skills Kit）&lt;/a&gt;&lt;/li&gt; 
+   &lt;li&gt;&lt;a href=&quot;https://developer.amazon.com/ja/blogs/appstore/post/9411ce62-6031-4dbc-a8bf-6b9c7868ee37/in-app-search-using-the-video-skills-kit-vsk-on-fire-tv&quot;&gt;アプリ内検索&lt;/a&gt;（英語のみ）&lt;/li&gt; 
+  &lt;/ul&gt; &lt;/li&gt; 
+ &lt;li&gt;&lt;a href=&quot;https://developer.amazon.com/ja/home.html&quot;&gt;開発者コンソールへのログイン&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+&lt;p&gt;&amp;nbsp;&lt;/p&gt; 
+&lt;hr /&gt; 
+&lt;p&gt;&lt;br /&gt; &lt;sup&gt;*1 当該スマートテレビはAmazon又はその関連会社がデザイン、設計及び製造したものではありません。&lt;br /&gt; *2 サービスをご利用いただく際は、別途登録・契約や料金が必要な場合があります。&lt;br /&gt; *3 Fire TV機能の利用には、Amazonアカウントが必要です。&lt;/sup&gt;&lt;/p&gt; 
+&lt;p&gt;&amp;nbsp;&lt;/p&gt; 
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>/blogs/appstore/post/3c9b4bad-7898-42c8-be88-92469df294b8/get-the-most-out-of-your-voice-enabled-fire-tv-app</id>
+        <title type="html">Get the most out of your voice-enabled Fire TV app</title>
+        <author><name>schwille</name></author>
+        <link rel="alternate" type="text/html" href="/blogs/appstore/post/3c9b4bad-7898-42c8-be88-92469df294b8/get-the-most-out-of-your-voice-enabled-fire-tv-app"/>
+        <published>2022-02-24T22:23:24+00:00</published>
+        <updated>2022-02-24T22:41:43+00:00</updated> 
+        <category term="Appstore" label="Appstore" />
+        <category term="English" scheme="http://roller.apache.org/ns/tags/" />
+        <category term="VSK" scheme="http://roller.apache.org/ns/tags/" />
+        <summary type="html">&lt;p&gt;&lt;a href=&quot;https://developer.amazon.com/blogs/appstore/post/3c9b4bad-7898-42c8-be88-92469df294b8/get-the-most-out-of-your-voice-enabled-fire-tv-app&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;https://m.media-amazon.com/images/G/01/mobile-apps/devportal2/content/blog_bestpractices_954x240.png&quot; style=&quot;height:240px; width:954px&quot; /&gt;&lt;/a&gt;&lt;/p&gt; 
+&lt;p&gt;Follow this best practices guide to ensure that customers can successfully use voice to discover and engage with your content.&lt;/p&gt;</summary>
+        <content type="html">&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;https://m.media-amazon.com/images/G/01/mobile-apps/devportal2/content/blog_bestpractices_954x240.png&quot; /&gt;&lt;/p&gt; 
+&lt;p&gt;&amp;nbsp;&lt;/p&gt; 
+&lt;p&gt;So you’ve gone through &lt;a href=&quot;https://developer.amazon.com/docs/catalog/getting-started-catalog-ingestion.html&quot;&gt;Catalog Ingestion&lt;/a&gt; and voice-enabled your Fire TV app using &lt;a href=&quot;https://developer.amazon.com/docs/video-skills-fire-tv-apps/introduction.html&quot;&gt;VSK&lt;/a&gt;. Now what? Here are some tips to ensure that customers can successfully use voice to discover and engage with your content.&lt;/p&gt; 
+&lt;h4&gt;&amp;nbsp;&lt;/h4&gt; 
+&lt;p&gt;&lt;strong&gt;Maintain your Catalog&lt;/strong&gt;&lt;/p&gt; 
+&lt;p&gt;VSK relies heavily on your catalog data. If your catalog does not include up-to-date, complete, and accurate information for your content, Alexa may not recognize that your app contains the content and you may miss out on traffic to your app. Make sure to provide as much accurate data for as much of your catalog as possible to ensure your content is discoverable through Alexa. Check out the &lt;a href=&quot;https://developer.amazon.com/docs/catalog/catalog-ingestion-best-practices.html&quot;&gt;Catalog Ingestion Best Practices&lt;/a&gt; for more info.&lt;br /&gt; &lt;br /&gt; Amazon sends ingestion reports via email whenever your catalog is updated so make sure to keep an eye out for those. Check with your Amazon Appstore representative if you want to confirm which email address the notifications are being sent to.&lt;/p&gt; 
+&lt;h4&gt;&amp;nbsp;&lt;/h4&gt; 
+&lt;p&gt;&lt;strong&gt;Avoid voice cliffs&lt;/strong&gt;&lt;/p&gt; 
+&lt;p&gt;Using your voice to engage with technology is a magical experience. On some devices, you don’t even have to pick up a remote. Interrupting the hands-free experience by forcing customers to pick up their remote is known as a ‘voice cliff’. Once customers have to pick up the remote, they are less likely to continue engaging with the app using their voice. One example of a voice cliff is exposing a Profile Selection screen. If a customer requests to watch a movie on your app, it’s best not to have them select a user profile as that will require them to pick up the remote and add that additional friction. Instead, try starting playback with the last or most used profile. Test &lt;a href=&quot;https://developer.amazon.com/docs/video-skills-fire-tv-apps/utterances-reference.html&quot;&gt;common use cases&lt;/a&gt; in your app to look for voice cliffs and come up with ways to allow customers to stay in the voice experience as much as possible.&lt;/p&gt; 
+&lt;h4&gt;&amp;nbsp;&lt;/h4&gt; 
+&lt;p&gt;&lt;strong&gt;Create mechanisms to log failures&lt;/strong&gt;&lt;/p&gt; 
+&lt;p&gt;You might discover that not all voice commands will be handled as expected. There are many different root causes for this and you will want to understand the ‘Why’. It is strongly recommended to create and integrate mechanisms to log and track down any failures you might come across. Depending on your app and service architecture, this can be done at different points within your service and can include various scopes. An ideal approach will include data that will enable you to answer the following questions:&lt;/p&gt; 
+&lt;ul&gt; 
+ &lt;li&gt;Did the directive from Alexa actually arrive in the App?&lt;/li&gt; 
+ &lt;li&gt;If yes, did the payload include the data needed to resolve the request? (e.g. correct Content ID)&lt;/li&gt; 
+ &lt;li&gt;If yes, do you have other logs that include details why it was not handled as expected?&lt;/li&gt; 
+&lt;/ul&gt; 
+&lt;p&gt;In case the answer to any of the questions is No, please reach out to your Amazon representative and ask for support.&lt;/p&gt; 
+&lt;h4&gt;&amp;nbsp;&lt;/h4&gt; 
+&lt;p&gt;&lt;strong&gt;Prepare for new releases&lt;/strong&gt;&lt;/p&gt; 
+&lt;p&gt;Alexa does not automatically know the names of new shows or movies and may need some training. To make sure that customers are able to request new releases by voice, the best approach is to provide new titles in your catalog well ahead of the release date (1 week recommended). To ensure the content does not appear in the search early, use the &lt;a href=&quot;https://developer.amazon.com/docs/catalog/extra-elements.html#WindowStart&quot;&gt;WindowStart&lt;/a&gt; and MetadataAvailabilityDate elements in your catalog. Notify your Amazon contact that you have new content coming out at least 1 week prior to release, so they can test and train Alexa accordingly.&lt;/p&gt; 
+&lt;h4&gt;&amp;nbsp;&lt;/h4&gt; 
+&lt;p&gt;&lt;strong&gt;Educate your customers&lt;/strong&gt;&lt;/p&gt; 
+&lt;p&gt;Let your customers know that your app is voice-enabled and encourage them to try it out. One possibility is to provide a tutorial that shows them what they can do with their voice. This will help your customers get in the habit of using voice to engage with your content and is also a great opportunity to promote your content. Have a new show coming out that you want people to watch? Use that show in your tutorial examples! Showing the tutorial screen at first app launch, as well as having it accessible in your Settings/Help section is recommended. Also, mention that your app is Alexa-enabled in your app description so your customers know that they can engage with your app using their voice.&lt;br /&gt; You are not limited to educating your customers on-device. If you have a Help section on your website, consider adding a help article on how to use Voice with your Fire TV app.&lt;/p&gt; 
+&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;https://m.media-amazon.com/images/G/01/mobile-apps/devportal2/content/Slide1.JPG&quot; /&gt;&lt;/p&gt; 
+&lt;p&gt;&amp;nbsp;&lt;/p&gt; 
+&lt;p&gt;&lt;strong&gt;In conclusion&lt;/strong&gt;&lt;/p&gt; 
+&lt;p&gt;Following these practices, you can eliminate customer friction and ensure that your customers will have a delightful experience using voice to engage with your app on Fire TV. Voice commands allow your customers to spend more time enjoying your content, and less time pressing buttons on a remote. So take your app for a spin and see how much you can control with your voice.&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>/blogs/appstore/post/58b69f66-cb3f-456c-8a93-35f98422538d/why-red-bull-tv-decided-to-voice-enable-their-fire-tv-app</id>
+        <title type="html">Why Red Bull TV decided to voice-enable their Fire TV app</title>
+        <author><name>schwille</name></author>
+        <link rel="alternate" type="text/html" href="/blogs/appstore/post/58b69f66-cb3f-456c-8a93-35f98422538d/why-red-bull-tv-decided-to-voice-enable-their-fire-tv-app"/>
+        <published>2022-02-22T17:23:05+00:00</published>
+        <updated>2022-02-24T22:35:01+00:00</updated> 
+        <category term="Appstore" label="Appstore" />
+        <category term="English" scheme="http://roller.apache.org/ns/tags/" />
+        <category term="VSK" scheme="http://roller.apache.org/ns/tags/" />
+        <summary type="html">&lt;p&gt;&lt;a href=&quot;https://developer.amazon.com/blogs/appstore/post/58b69f66-cb3f-456c-8a93-35f98422538d/why-red-bull-tv-decided-to-voice-enable-their-fire-tv-app &quot;&gt;&lt;img alt=&quot;&quot; src=&quot;https://m.media-amazon.com/images/G/01/mobile-apps/devportal2/content/blog_redbull_954x240.png&quot; style=&quot;height:240px; width:954px&quot; /&gt;&lt;/a&gt;&lt;/p&gt; 
+&lt;p&gt;Red Bull TV shares their experience integrating voice features with Amazon Appstore for Fire TV, how it helped to expand on their global customer reach, and to offer customers less friction as they engage with in-app content.&lt;/p&gt;</summary>
+        <content type="html">&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;https://m.media-amazon.com/images/G/01/mobile-apps/devportal2/content/blog_redbull_954x240.png&quot; style=&quot;height:240px; width:954px&quot; /&gt;&lt;/p&gt; 
+&lt;p&gt;Alexa for Video Publishers lets you build experiences for customers to easily find, consume, and control your app’s video content using just their voice. Our partners at Red Bull TV have integrated &lt;a href=&quot;https://developer.amazon.com/docs/video-skills-fire-tv-apps/introduction.html&quot;&gt;VSK for Fire TV&lt;/a&gt; and &lt;a href=&quot;https://developer.amazon.com/docs/video-skills-multimodal-devices/introduction.html&quot;&gt;Multimodal&lt;/a&gt; into their app for customers to use natural language commands to search for their app&apos;s content, launch the app, control media playback, change the channel, and much more.&lt;/p&gt; 
+&lt;p&gt;Thank you to Red Bull TV for their time to share their insights and experience about integrating and enabling voice features with Amazon Appstore for Fire TV.&lt;/p&gt; 
+&lt;p&gt;&amp;nbsp;&lt;/p&gt; 
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Fire TV enables reach of wider global audience&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt; 
+&lt;p&gt;Red Bull recognizes Amazon as a leader in the technology and streaming hardware space, and has been an early advocate for partnering on new and exciting features to enhance their consumer app experience.&lt;/p&gt; 
+&lt;p&gt;From the inception of Red Bull TV, their main goal has been to reach and inspire as many customers as possible with cutting-edge content and an award-winning user experience. Fire TV has paved the way in the streaming world and has made it possible for Red Bull TV to reach a wider, global audience.&lt;/p&gt; 
+&lt;p&gt;&amp;nbsp;&lt;/p&gt; 
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Voice enhances customer experience&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt; 
+&lt;p&gt;Red Bull deeply values Amazon’s focus on innovation and support for voice features, and believe that Alexa is among the top voice solutions in the market today. They have found that the advantages of voice have improved user experience, providing a more seamless way to navigate to content.&lt;/p&gt; 
+&lt;p&gt;Voice has helped create hassle-free experiences for Red Bull customers and reduce interactions that are cumbersome with a traditional remote. They are very passionate about growing technology and working with partners like Amazon, who are putting the customer interests first. Red Bull appreciates the convenience and ease of launching into playback. Using voice features promotes additional video plays and more opportunity for content in the background.&lt;/p&gt; 
+&lt;p&gt;&amp;nbsp;&lt;/p&gt; 
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;The future is voice for video streaming apps &amp;nbsp;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt; 
+&lt;p&gt;With discovery and navigation increasingly handled outside of app, Red Bull has identified voice as playing a central role in enhancing their customers search experience. Users will have more granular control over playback and access to information related to content will be easier to access and discover. &amp;nbsp;They are confident that voice is the future of streaming media and that it has made monumental leaps since its inception, with more exciting Fire TV voice features to follow for customers to enjoy.&lt;/p&gt; 
+&lt;p&gt;&amp;nbsp;&lt;/p&gt; 
+&lt;p&gt;&lt;em&gt;About Red Bull TV &lt;/em&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;em&gt;Red Bull TV gives you free, front row access to a world that’s Beyond the Ordinary. Meet athletes, artists, dancers and pioneers at the forefront of innovation - icons, teams, competitors, and rising stars from around the world. Customers can experience 24/7 Linear TV channel or choose from a deep video on demand library consisting of thousands of hours of entertainment across sports, culture and lifestyle topics. &lt;/em&gt;&lt;/p&gt; 
+&lt;p&gt;&amp;nbsp;&lt;/p&gt; 
+&lt;hr /&gt; 
+&lt;p style=&quot;margin-left:0px; margin-right:0px; text-align:start&quot;&gt;&amp;nbsp;&lt;/p&gt; 
+&lt;p style=&quot;margin-left:0px; margin-right:0px; text-align:start&quot;&gt;&lt;strong&gt;Get started building your Fire TV app today&lt;/strong&gt;&lt;/p&gt; 
+&lt;p style=&quot;margin-left:0px; margin-right:0px; text-align:start&quot;&gt;&lt;a href=&quot;https://developer.amazon.com/docs/fire-tv/getting-started-developing-apps-and-games.html&quot;&gt;Getting started with Fire TV&lt;/a&gt;&lt;/p&gt; 
+&lt;p style=&quot;margin-left:0px; margin-right:0px; text-align:start&quot;&gt;&lt;a href=&quot;https://developer.amazon.com/docs/fire-tv/voice-enable-your-app-and-content.html&quot;&gt;Voice-enabling your app and content&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>/blogs/appstore/post/23da7a63-c7f5-49f9-aa29-3f003278bb0d/customers-can-now-preview-the-amazon-appstore-on-windows-11</id>
+        <title type="html">Customers can now preview the Amazon Appstore on Windows 11</title>
+        <author><name>schwille</name></author>
+        <link rel="alternate" type="text/html" href="/blogs/appstore/post/23da7a63-c7f5-49f9-aa29-3f003278bb0d/customers-can-now-preview-the-amazon-appstore-on-windows-11"/>
+        <published>2022-02-15T17:00:04+00:00</published>
+        <updated>2022-02-15T17:00:04+00:00</updated> 
+        <category term="Appstore" label="Appstore" />
+        <category term="English" scheme="http://roller.apache.org/ns/tags/" />
+        <category term="Windows 11" scheme="http://roller.apache.org/ns/tags/" />
+        <summary type="html">&lt;p&gt;&lt;a href=&quot;https://developer.amazon.com/blogs/appstore/post/23da7a63-c7f5-49f9-aa29-3f003278bb0d/customers-can-now-preview-the-amazon-appstore-on-windows-11&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;https://m.media-amazon.com/images/G/01/mobile-apps/devportal2/content/blog_msftappstore03_954x240.png&quot; style=&quot;height:240px; width:954px&quot; /&gt;&lt;/a&gt;&lt;/p&gt; 
+&lt;p&gt;A public preview of Amazon Appstore is now available to all US-based Windows 11 customers.&lt;/p&gt;</summary>
+        <content type="html">&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;https://m.media-amazon.com/images/G/01/mobile-apps/devportal2/content/blog_msftappstore03_954x240.png&quot; /&gt;&lt;/p&gt; 
+&lt;p&gt;The next phase of Amazon Appstore on Windows 11 is here.&amp;nbsp; A public preview of Amazon Appstore is now available to US-based Windows 11 customers.&amp;nbsp; Over 1,000 apps are included in the preview, titles like Khan Academy Kids, Audible, Subway Surfers, and War of the Visions: Final Fantasy Brave Exvius, with additional apps added as Amazon continues to work towards new feature enhancements.&amp;nbsp; Both Amazon and Microsoft are working on feature improvements including graphics, input controls, and form factor to make it easier for developers to port their apps to Windows devices.&lt;br /&gt; &lt;br /&gt; No additional action or work is required to participate in this program, however developers are able to test an app’s compatibility with Windows 11 utilizing the video tutorial provided below.&lt;br /&gt; &amp;nbsp;&lt;/p&gt; 
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Test your app’s compatibility with Windows 11&lt;/em&gt;&lt;/strong&gt;&lt;br /&gt; Follow the how-to video below to learn how to test an app on &lt;a href=&quot;https://docs.microsoft.com/en-us/windows/android/wsa/&quot;&gt;Windows Subsystem for Android&lt;/a&gt;.&amp;nbsp; If you are able to install the app and major functionality works on a Windows 11 device, no further action is needed at this time.&amp;nbsp; If you encounter issues during testing, please reach out to our Developer Support Team and share the experience via a &lt;a href=&quot;https://developer.amazon.com/support/contact-us?sc_channel=website&amp;amp;sc_publisher=devportal&amp;amp;sc_campaign=Conversion_Contact-Us&amp;amp;sc_assettype=conversion&amp;amp;sc_team=us&amp;amp;sc_traffictype=organic&amp;amp;sc_country=united-states&amp;amp;sc_segment=all&amp;amp;sc_itrackingcode=100020_us_website&amp;amp;sc_detail=dp-support-page&quot;&gt;Contact Us form&lt;/a&gt;.&amp;nbsp; The valuable feedback will help to prioritize new features and enhancements for the program.&lt;br /&gt; &amp;nbsp;&lt;/p&gt; 
+&lt;p&gt;&lt;iframe allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;360&quot; src=&quot;//www.youtube.com/embed/z_ehadkRyzY&quot; width=&quot;640&quot;&gt;&lt;/iframe&gt;&lt;/p&gt; 
+&lt;p&gt;&amp;nbsp;&lt;/p&gt; 
+&lt;p&gt;More information will be shared during a FireSide Chat LIVE on Twitch at &lt;a href=&quot;http://twitch.tv/amazonappdev&quot;&gt;twitch.tv/amazonappdev&lt;/a&gt; on Tuesday Feb 22nd [6pm GMT/10am PST].&amp;nbsp; Amazon’s Developer Evangelists will provide a demo of Android Apps on Windows 11.&lt;br /&gt; &lt;br /&gt; As progress continues, details surrounding General Availability will be released.&amp;nbsp; Sign up &lt;a href=&quot;https://m.amazonappservices.com/developer-interest&quot;&gt;here&lt;/a&gt; to receive updates as the program develops, and if you have not brought your app to the Amazon Appstore yet, &lt;a href=&quot;https://developer.amazon.com/docs/app-submission/getting-started.html&quot;&gt;submit your app&lt;/a&gt; today.&lt;/p&gt; 
+&lt;p&gt;&amp;nbsp;&lt;/p&gt; 
+&lt;hr /&gt; 
+&lt;p&gt;&lt;br /&gt; &lt;strong&gt;FAQs&lt;/strong&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;strong&gt;1) As a developer – how do I get my app in the catalog?&lt;/strong&gt;&lt;br /&gt; As testing capabilities continue to expand, the Amazon Appstore is constantly testing new apps to be included in this preview phase. If you’re not developing for the Amazon Appstore today, the best way to get started is to &lt;a href=&quot;https://developer.amazon.com/docs/app-submission/getting-started.html&quot;&gt;submit your app&lt;/a&gt; to unlock the benefits of the Amazon Appstore.&lt;br /&gt; &lt;br /&gt; &lt;strong&gt;2) When is General Availability?&lt;/strong&gt;&lt;br /&gt; Amazon and Microsoft look forward to sharing more details on General Availability in 2022.&lt;br /&gt; &lt;br /&gt; &lt;strong&gt;3) Will Amazon Appstore be available to Windows 11 devices internationally?&lt;/strong&gt;&lt;br /&gt; At the moment it is only available in the US but additional locales will be included at a later date.&lt;br /&gt; &lt;br /&gt; &lt;strong&gt;4) How do I know if I am part of the 1,000+ apps that launched with public preview?&lt;/strong&gt;&lt;br /&gt; If your app is included in the preview, you will see the “Windows Devices” tab in the Amazon Developer Portal under enabled devices. If you do not see this option, your app is not included in this phase of the program however we will continue to add apps to the store as the program develops.&lt;br /&gt; &lt;br /&gt; &lt;strong&gt;5) How can I make my app available to Windows 11 devices through the Amazon Appstore?&lt;/strong&gt;&lt;br /&gt; We are not accepting submissions targeting Windows 11 devices at this time. We will continue to add passing apps to the store as the program develops.&lt;br /&gt; &lt;br /&gt; &lt;strong&gt;6) How will Android apps run on the Windows 11 OS?&lt;/strong&gt;&lt;br /&gt; Microsoft launched Windows Subsystem for Android™ (WSA) that powers the Amazon Appstore and its catalog. WSA includes the Linux kernel and the Android OS based on the Android Open Source Project (AOSP) version 11 and is distributed through the Microsoft Store as part of the Amazon Appstore install. Windows Subsystem for Android™ runs in a Hyper-V Virtual Machine, similar to the Windows Subsystem for Linux, and it understands how to map the runtime and APIs of apps in the AOSP environment to the Windows graphic layer, the memory buffers, the input modes, the physical and virtual devices, and the sensors.&lt;br /&gt; &lt;br /&gt; &lt;strong&gt;7) What device hardware is compatible? &lt;/strong&gt;&lt;br /&gt; Find Windows 11 specs, features, and computer requirements &lt;a href=&quot;https://www.microsoft.com/en-us/windows/windows-11-specifications&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>/blogs/appstore/post/4f520468-7069-4889-b49a-0e2daa37cc10/jp-small-business-developers-now-earn-more1</id>
+        <title type="html">【Amazonアプリストア小規模ビジネス向けアクセラレータープログラム】第1段階が始動</title>
+        <author><name>Nanaho Nishiyama</name></author>
+        <link rel="alternate" type="text/html" href="/blogs/appstore/post/4f520468-7069-4889-b49a-0e2daa37cc10/jp-small-business-developers-now-earn-more1"/>
+        <published>2021-12-28T18:26:52+00:00</published>
+        <updated>2022-02-15T23:06:07+00:00</updated> 
+        <category term="Appstore" label="Appstore" />
+        <category term="Japan" scheme="http://roller.apache.org/ns/tags/" />
+        <category term="Launch" scheme="http://roller.apache.org/ns/tags/" />
+        <summary type="html">&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;https://m.media-amazon.com/images/G/01/mobile-apps/devportal2/content/blog_revshare02_954x240.png&quot; style=&quot;height:240px; width:954px&quot; /&gt;&lt;/p&gt; 
+&lt;p&gt;このたび、Amazonアプリストア小規模ビジネス向けアクセラレータープログラムの第1段階が始動となりました。&lt;/p&gt;</summary>
+        <content type="html">&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;https://m.media-amazon.com/images/G/01/mobile-apps/devportal2/content/blog_revshare02_954x240.png&quot; style=&quot;height:240px; width:954px&quot; /&gt;&lt;/p&gt; 
+&lt;p&gt;（本ブログは、&lt;a href=&quot;https://developer.amazon.com/blogs/appstore/post/959bcba1-a4d9-4a8c-9502-2eb670f124b1/small-business-developers-now-earn-more&quot; target=&quot;_blank&quot;&gt;こちらの英語記事&lt;/a&gt;を翻訳したものです）&lt;/p&gt; 
+&lt;p&gt;&amp;nbsp;&lt;/p&gt; 
+&lt;p&gt;このたび、Amazonアプリストア小規模ビジネス向けアクセラレータープログラムの第1段階が始動となりました。前暦年の年間収益が100万USD未満、またはAmazonアプリストアの利用が初めての開発者に課される手数料率が20%に引き下げられるため、収益の80%を得られるようになります。新料率は自動的に適用となるため、必要なお手続きはありません。&lt;br /&gt; &lt;br /&gt; また、本プログラムの一環として、対象となる小規模開発者のアプリ専用セクションがFireタブレットデバイス内で新たに設けられました。このセクションでは、本プログラムに参加している開発者の事例をご紹介するとともに、そのアプリの販促を幅広く行う予定です。&lt;br /&gt; &lt;br /&gt; 本プログラムは2022年に次の段階へと進み、収益の10%相当のAWS販促クレジットが付与されるようになります。対象となる開発者には、AWS販促クレジットの受け取り方法や、&lt;a href=&quot;https://aws.amazon.com/jp/campaigns/small-medium-businesses/&quot; target=&quot;_blank&quot;&gt;クラウド開発のメリット&lt;/a&gt;を活かす方法をEメールでご案内いたします。&lt;/p&gt; 
+&lt;p&gt;&amp;nbsp;&lt;/p&gt; 
+&lt;hr /&gt; 
+&lt;p&gt;&lt;strong&gt;よくある質問（FAQ）&lt;/strong&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;strong&gt;1）小規模ビジネス向けアクセラレータープログラムの適用対象について教えてください。&lt;/strong&gt;&lt;/p&gt; 
+&lt;ul&gt; 
+ &lt;li&gt;すべてのマーケットプレイスにおいて前暦年の年間収益が100万USD未満の開発者と、Amazonアプリストアの利用が初めての開発者が適用対象となります。&lt;/li&gt; 
+ &lt;li&gt;対象となった開発者の収益が当年内に100万USD以上になると、手数料率と提供されるベネフィットは標準に戻ります。&lt;/li&gt; 
+ &lt;li&gt;翌年以降、年間収益が100万USDを下回った場合、その次の暦年は本プログラムの適用対象となります。&lt;/li&gt; 
+&lt;/ul&gt; 
+&lt;p&gt;&amp;nbsp;&lt;/p&gt; 
+&lt;p&gt;&lt;strong&gt;2）小規模ビジネス向けアクセラレータープログラムの一環であるAWS販促クレジットは、いつから開発者に付与されますか？ &lt;/strong&gt;&lt;/p&gt; 
+&lt;p&gt;本プログラムのAWS販促クレジットは、2022年度内の付与開始を予定しています。対象となる開発者にはEメールでお知らせいたします。&lt;/p&gt; 
+&lt;p&gt;&amp;nbsp;&lt;/p&gt; 
+&lt;p&gt;&lt;strong&gt;3）適用対象の開発者の収益分配率は、いつから変更となりますか？&lt;/strong&gt;&lt;/p&gt; 
+&lt;p&gt;収益分配率は2021年12月22日に引き上げられ、同日から対象開発者へのロイヤリティの支払いに反映されます。&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>/blogs/appstore/post/959bcba1-a4d9-4a8c-9502-2eb670f124b1/small-business-developers-now-earn-more</id>
+        <title type="html">Small business developers now earn more</title>
+        <author><name>schwille</name></author>
+        <link rel="alternate" type="text/html" href="/blogs/appstore/post/959bcba1-a4d9-4a8c-9502-2eb670f124b1/small-business-developers-now-earn-more"/>
+        <published>2021-12-28T16:59:43+00:00</published>
+        <updated>2021-12-28T16:59:43+00:00</updated> 
+        <category term="Appstore" label="Appstore" />
+        <category term="English" scheme="http://roller.apache.org/ns/tags/" />
+        <category term="Launch" scheme="http://roller.apache.org/ns/tags/" />
+        <summary type="html">&lt;p&gt;&lt;a href=&quot;https://developer.amazon.com/blogs/appstore/post/959bcba1-a4d9-4a8c-9502-2eb670f124b1/small-business-developers-now-earn-more&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;https://m.media-amazon.com/images/G/01/mobile-apps/devportal2/content/blog_revshare02_954x240.png&quot; style=&quot;height:240px; width:954px&quot; /&gt;&lt;/a&gt;&lt;/p&gt; 
+&lt;p&gt;Announcing the launch of the first phase of the Amazon Appstore Small Business Accelerator Program&lt;/p&gt;</summary>
+        <content type="html">&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;https://m.media-amazon.com/images/G/01/mobile-apps/devportal2/content/blog_revshare02_954x240.png&quot; style=&quot;height:240px; width:954px&quot; /&gt;&lt;/p&gt; 
+&lt;p&gt;We’re excited to announce the launch of the first phase of the Amazon Appstore Small Business Accelerator Program. Developers with revenue less than 1 million USD in the previous calendar year will now receive an increased 80/20 revenue share with no action required to earn the new rates.&lt;br /&gt; &lt;br /&gt; As part of the program, we’ve also created a new dedicated application row on Fire tablet devices which features apps from eligible small business developers. This row will showcase developers from the program and we hope will drive more visibility for a broad selection of apps.&lt;br /&gt; &lt;br /&gt; The program will continue to expand in 2022, with the next phase featuring AWS promotional credits equivalent to 10 percent of revenue. Eligible developers will receive guidance via email on how to claim their credits and unlock the &lt;a href=&quot;https://aws.amazon.com/campaigns/small-medium-businesses/&quot;&gt;benefits of building on the cloud&lt;/a&gt;.&lt;br /&gt; &lt;br /&gt; Want to stay updated? Receive continued program updates by &lt;a href=&quot;https://developer.amazon.com/apps-and-games#sign-up-for-our-newsletter&quot;&gt;subscribing to the Amazon Appstore Developer Newsletter&lt;/a&gt;.&lt;/p&gt; 
+&lt;p&gt;&amp;nbsp;&lt;/p&gt; 
+&lt;hr /&gt; 
+&lt;p&gt;&lt;strong&gt;FAQs&lt;/strong&gt;&lt;br /&gt; &lt;br /&gt; &lt;strong&gt;1) How does eligibility for the Amazon Appstore Small Business Accelerator program work?&lt;/strong&gt;&lt;/p&gt; 
+&lt;ul&gt; 
+ &lt;li&gt;Developers in all marketplaces who earned less than 1 million USD in the prior calendar year and developers new to Amazon Appstore are eligible.&lt;/li&gt; 
+ &lt;li&gt;If an eligible developer earns 1 million USD or more in the current year, they will revert to the standard royalty rates and benefits.&lt;/li&gt; 
+ &lt;li&gt;If a developer’s revenue falls below 1 million USD in a future year, the developer will be eligible in the next calendar year.&lt;/li&gt; 
+&lt;/ul&gt; 
+&lt;p&gt;&amp;nbsp;&lt;/p&gt; 
+&lt;p&gt;&lt;strong&gt;2) When will AWS promotional credits become available to developers as part of the Amazon Appstore Small Business Accelerator Program? &lt;/strong&gt;&lt;/p&gt; 
+&lt;p&gt;AWS promotional credits will become available as part of the program in 2022. All eligible developers will be notified via email.&lt;/p&gt; 
+&lt;p&gt;&amp;nbsp;&lt;/p&gt; 
+&lt;p&gt;&lt;strong&gt;3) Once I am eligible, when will the revenue-share adjustment start?&lt;/strong&gt;&lt;/p&gt; 
+&lt;p&gt;The revenue share adjustment began on December 22, 2021,&amp;nbsp;and higher royalty payments started for all eligible developers on this day.&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>/blogs/appstore/post/697057b7-f472-40c7-866d-e768bb08d387/jp-the-new-amazon-appstore-sdk</id>
+        <title type="html">[Appstore SDK] 提供開始のお知らせ</title>
+        <author><name>Nanaho Nishiyama</name></author>
+        <link rel="alternate" type="text/html" href="/blogs/appstore/post/697057b7-f472-40c7-866d-e768bb08d387/jp-the-new-amazon-appstore-sdk"/>
+        <published>2021-11-16T19:02:06+00:00</published>
+        <updated>2021-11-16T19:02:06+00:00</updated> 
+        <category term="Appstore" label="Appstore" />
+        <category term="Announcements" scheme="http://roller.apache.org/ns/tags/" />
+        <category term="Japan" scheme="http://roller.apache.org/ns/tags/" />
+        <summary type="html">&lt;p&gt;&lt;a href=&quot;https://developer.amazon.com/blogs/appstore/post/697057b7-f472-40c7-866d-e768bb08d387/jp-the-new-amazon-appstore-sdk&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;https://m.media-amazon.com/images/G/01/mobile-apps/devportal2/content/blog_sdk_954x240.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt; 
+&lt;p&gt;このたびAmazonアプリストアでは、新しいアプリ内課金（IAP）SDK「&lt;a href=&quot;https://developer.amazon.com/ja/docs/apps-and-games/sdk-downloads.html#appstoresdk&quot;&gt;Appstore SDK&lt;/a&gt;」の提供を開始いたしました。&lt;a href=&quot;https://developer.amazon.com/ja/docs/in-app-purchasing/iap-overview.html&quot;&gt;本SDK&lt;/a&gt;を使用することで、Fire TVやFireタブレットで購入可能なデジタルコンテンツ・定期購入型アイテム（ゲーム内通貨、ゲームにおける追加のライフ、アップグレードなど）を提供することができます。&lt;/p&gt;</summary>
+        <content type="html">&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;https://m.media-amazon.com/images/G/01/mobile-apps/devportal2/content/blog_sdk_954x240.png&quot; /&gt;&lt;/p&gt; 
+&lt;p&gt;このたびAmazonアプリストアでは、新しいアプリ内課金（IAP）SDK「&lt;a href=&quot;https://developer.amazon.com/ja/docs/apps-and-games/sdk-downloads.html#appstoresdk&quot;&gt;Appstore SDK&lt;/a&gt;」の提供を開始いたしました。&lt;a href=&quot;https://developer.amazon.com/ja/docs/in-app-purchasing/iap-overview.html&quot;&gt;本SDK&lt;/a&gt;を使用することで、Fire TVやFireタブレットで購入可能なデジタルコンテンツ・定期購入型アイテム（ゲーム内通貨、ゲームにおける追加のライフ、アップグレードなど）を提供することができます。&lt;br /&gt; &amp;nbsp;&lt;/p&gt; 
+&lt;p&gt;&lt;strong&gt;Appstore SDKの統合方法&lt;/strong&gt;&lt;br /&gt; Appstore SDKの統合は簡単です。まず、&lt;a href=&quot;https://developer.amazon.com/ja/docs/apps-and-games/sdk-downloads.html&quot;&gt;Appstore SDK&lt;/a&gt;をダウンロードし、&lt;a href=&quot;https://developer.amazon.com/ja/docs/in-app-purchasing/transitioning-to-appstore-sdk.html&quot;&gt;こちらのテクニカルドキュメント&lt;/a&gt;に記載されている手順に従ってください。統合が完了したら、Amazonアプリストアでアプリを公開する前に&lt;a href=&quot;https://developer.amazon.com/ja/docs/in-app-purchasing/iap-app-tester-user-guide.html&quot;&gt;App Tester&lt;/a&gt;を使用してIAP機能のテストを行います。アプリをローカル環境でテストした後は、&lt;a href=&quot;https://developer.amazon.com/ja/docs/app-testing/live-app-testing-getting-started.html&quot;&gt;ライブアプリテスト&lt;/a&gt;サービスを使用して、特定のユーザーグループを対象に本番環境でアプリのベータテストを実行することも可能です。&lt;br /&gt; &amp;nbsp;&lt;/p&gt; 
+&lt;p&gt;&lt;strong&gt;IAP SDK V2.0からAppstore SDKへの移行&lt;/strong&gt;&lt;br /&gt; この移行方法を詳しく説明した&lt;a href=&quot;https://youtu.be/YtfQjZm_RCE&quot;&gt;ビデオチュートリアル&lt;/a&gt;（日本語字幕付き）をご用意しました。まずは&lt;a href=&quot;https://developer.amazon.com/ja/docs/apps-and-games/sdk-downloads.html&quot;&gt;Appstore SDK&lt;/a&gt;をダウンロードしてから、既存のIAP JARを削除し、パブリックキーを用いて新しいAppstore SDKを構成してください。&lt;br /&gt; &lt;br /&gt; &lt;iframe allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;360&quot; src=&quot;//www.youtube.com/embed/YtfQjZm_RCE&quot; width=&quot;640&quot;&gt;&lt;/iframe&gt;&lt;br /&gt; &amp;nbsp;&lt;/p&gt; 
+&lt;hr /&gt; 
+&lt;p&gt;Appstore SDKの詳細については、 以下のテクニカルドキュメントをご確認ください。&lt;/p&gt; 
+&lt;ul&gt; 
+ &lt;li&gt;&lt;a href=&quot;https://developer.amazon.com/ja/docs/in-app-purchasing/transitioning-to-appstore-sdk.html&quot;&gt;Appstore SDKへの移行&lt;/a&gt;&lt;/li&gt; 
+ &lt;li&gt;&lt;a href=&quot;https://developer.amazon.com/ja/docs/in-app-purchasing/iap-get-started.html&quot;&gt;アプリ内課金（IAP）の実装について&lt;/a&gt;&lt;/li&gt; 
+ &lt;li&gt;&lt;a href=&quot;https://developer.amazon.com/ja/docs/cross-platform-plugins/cpp-use-appstore-sdk-unity.html&quot;&gt;Unity用Appstore SDKプラグイン&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt;</content>
+    </entry>
+    <entry>
+        <id>/blogs/appstore/post/afe4ee70-d2ec-420c-bac1-12d9f9d0e6a1/the-new-amazon-appstore-sdk</id>
+        <title type="html">The new Amazon Appstore SDK</title>
+        <author><name>schwille</name></author>
+        <link rel="alternate" type="text/html" href="/blogs/appstore/post/afe4ee70-d2ec-420c-bac1-12d9f9d0e6a1/the-new-amazon-appstore-sdk"/>
+        <published>2021-11-16T18:57:52+00:00</published>
+        <updated>2021-11-16T20:24:06+00:00</updated> 
+        <category term="Appstore" label="Appstore" />
+        <category term="Announcements" scheme="http://roller.apache.org/ns/tags/" />
+        <category term="English" scheme="http://roller.apache.org/ns/tags/" />
+        <summary type="html">&lt;p&gt;&lt;a href=&quot;https://developer.amazon.com/blogs/appstore/post/afe4ee70-d2ec-420c-bac1-12d9f9d0e6a1/the-new-amazon-appstore-sdk&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;https://m.media-amazon.com/images/G/01/mobile-apps/devportal2/content/blog_sdk_954x240.png&quot; style=&quot;height:240px; width:954px&quot; /&gt;&lt;/a&gt;&lt;/p&gt; 
+&lt;p&gt;Learn about the latest version of Amazon’s In-App Purchasing SDK.&lt;/p&gt;</summary>
+        <content type="html">&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;https://m.media-amazon.com/images/G/01/mobile-apps/devportal2/content/blog_sdk_954x240.png&quot; /&gt;&lt;/p&gt; 
+&lt;p&gt;Today, the Amazon Appstore is launching the &lt;a href=&quot;https://developer.amazon.com/docs/apps-and-games/sdk-downloads.html#appstoresdk&quot;&gt;Appstore SDK&lt;/a&gt;, the newest version of Amazon’s In-App Purchasing SDK. This SDK is the latest &lt;a href=&quot;https://developer.amazon.com/docs/in-app-purchasing/iap-overview.html&quot;&gt;I&lt;/a&gt;&lt;a href=&quot;http://developer.amazon.com/docs/in-app-purchasing/iap-overview.html&quot;&gt;n-App Purchasing (IAP) SDK&lt;/a&gt;, enabling developers to offer digital content and subscriptions for purchase, such as virtual currency, extra lives, and upgrades on Fire TV and Fire tablet devices.&lt;br /&gt; &amp;nbsp;&lt;/p&gt; 
+&lt;p&gt;&lt;strong&gt;Getting started with Appstore SDK&lt;/strong&gt;&lt;br /&gt; Integrating with Appstore SDK is easy. To get started, &lt;a href=&quot;https://developer.amazon.com/docs/apps-and-games/sdk-downloads.html&quot;&gt;download the SDK&lt;/a&gt; and follow the steps listed in our &lt;a href=&quot;https://developer.amazon.com/docs/in-app-purchasing/transitioning-to-appstore-sdk.html&quot;&gt;technical documentation&lt;/a&gt;. Post-integration, you can use the &lt;a href=&quot;https://developer.amazon.com/docs/in-app-purchasing/iap-app-tester-user-guide.html&quot;&gt;App Tester&lt;/a&gt; to test your IAP functionality before publishing to the Amazon Appstore. After testing your app locally, you can also use the &lt;a href=&quot;https://developer.amazon.com/docs/app-testing/live-app-testing-getting-started.html&quot;&gt;Live App Testing&lt;/a&gt; service to beta test your app in a live production environment with a select group of users.&lt;br /&gt; &amp;nbsp;&lt;/p&gt; 
+&lt;p&gt;&lt;strong&gt;Upgrading from IAP SDK V2.0 to Appstore SDK&lt;/strong&gt;&lt;br /&gt; To help with the transition, we’ve created a &lt;a href=&quot;https://www.youtube.com/watch?v=YtfQjZm_RCE&quot;&gt;detailed tutorial&lt;/a&gt; on how to migrate an app from IAP SDK V2.0 to Appstore SDK. The first step is &lt;a href=&quot;https://developer.amazon.com/docs/apps-and-games/sdk-downloads.html&quot;&gt;downloading the Appstore SDK&lt;/a&gt;. From there, you’ll need to remove your existing IAP JAR and configure the new Appstore SDK using a public key.&lt;br /&gt; &amp;nbsp;&lt;/p&gt; 
+&lt;p&gt;&lt;iframe allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;360&quot; src=&quot;//www.youtube.com/embed/YtfQjZm_RCE&quot; width=&quot;640&quot;&gt;&lt;/iframe&gt;&lt;/p&gt; 
+&lt;p&gt;&amp;nbsp;&lt;/p&gt; 
+&lt;hr /&gt; 
+&lt;p&gt;Interested in learning more about the Appstore SDK? Check out the technical documentation:&lt;/p&gt; 
+&lt;ul&gt; 
+ &lt;li&gt;&lt;a href=&quot;https://developer.amazon.com/docs/in-app-purchasing/transitioning-to-appstore-sdk.html&quot;&gt;Transitioning to the Appstore SDK&lt;/a&gt;&lt;/li&gt; 
+ &lt;li&gt;&lt;a href=&quot;https://developer.amazon.com/docs/in-app-purchasing/iap-get-started.html&quot;&gt;Get&amp;nbsp;started with IAP&lt;/a&gt;&lt;/li&gt; 
+ &lt;li&gt;&lt;a href=&quot;https://developer.amazon.com/docs/cross-platform-plugins/cpp-use-appstore-sdk-unity.html&quot;&gt;Appstore SDK Plugin for Unity&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt;</content>
+    </entry>
+</feed>
+        </div>
+        
+
+
+
+
+<section class="dp-content-slot dp-content-pixel-tracker-slot">
+  <div class="dp-content-slot-inner container">
+    
+  </div>
+</section>
+        
+
+
+
+
+
+
+
+<footer class='dpFooter'>
+    <a class='dpfBackToTopLink' href='#'>Back to top</a>
+
+    <nav class="dpfNav accordion clearfix">
+        <div class='dpfWidth'>
+            <div class='dpfnHideRightMargin'>
+                
+                    
+                        
+                        <div class='dpfnColWrap'>
+                    
+                        <div class="dpfnCol">
+                            
+                                <div class="dpfnGroup accrItem">
+                                    <div class='dpIconArrow accrHandle'></div>
+                                    
+                                        
+                                        
+                                            <h3>Resources</h3>
+                                        
+                                    
+                                    <ul>
+                                        
+                                            <li><a href="/apps-and-games/blogs">Amazon Developer Blog</a></li>
+                                        
+                                            <li><a href="/documentation">Technical Documentation</a></li>
+                                        
+                                            <li><a href="/apps-and-games/devhuddle/">Developer Huddle</a></li>
+                                        
+                                            <li><a href="/docs/gamemaker/overview.html">GameMaker Tutorials</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            
+                        </div>
+                    
+                
+                    
+                        <div class="dpfnCol">
+                            
+                                <div class="dpfnGroup accrItem">
+                                    <div class='dpIconArrow accrHandle'></div>
+                                    
+                                        
+                                        
+                                            <h3>Testing Tools</h3>
+                                        
+                                    
+                                    <ul>
+                                        
+                                            <li><a href="/apps-and-games/test">App Testing Tools</a></li>
+                                        
+                                            <li><a href="/app-testing-service/tya/dashboard.html">App Testing Service</a></li>
+                                        
+                                            <li><a href="/docs/app-testing/live-app-testing-getting-started.html">Live App Testing</a></li>
+                                        
+                                            <li><a href="/docs/html5-web-apps/webapp-app-tester.html">Amazon Web App Tester</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            
+                        </div>
+                    
+                        
+                        </div>
+                    
+                
+                    
+                        
+                        <div class='dpfnColWrap'>
+                    
+                        <div class="dpfnCol">
+                            
+                                <div class="dpfnGroup accrItem">
+                                    <div class='dpIconArrow accrHandle'></div>
+                                    
+                                        
+                                            <h3><a href="/apps-and-games/services-and-apis">Services & APIs</a></h3>
+                                        
+                                        
+                                    
+                                    <ul>
+                                        
+                                            <li><a href="/apps-and-games/login-with-amazon">Login with Amazon</a></li>
+                                        
+                                            <li><a href="/docs/in-app-purchasing/iap-overview.html ">In-App Purchasing</a></li>
+                                        
+                                            <li><a href="https://developer.amazon.com/frustration-free-setup">Frustration-Free Setup</a></li>
+                                        
+                                            <li><a href="/docs/app-submission-api/overview.html">App Submission API</a></li>
+                                        
+                                            <li><a href="/docs/app-submission/release-updates-in-staged-rollouts.html">Staged Rollouts</a></li>
+                                        
+                                            <li><a href="/docs/reports-promo/promo-overview.html ">Developer Promotions Console</a></li>
+                                        
+                                            <li><a href="/apps-and-games/incentives-api">Amazon Incentives API</a></li>
+                                        
+                                            <li><a href="/docs/adm/overview.html">Device Messaging</a></li>
+                                        
+                                            <li><a href="/apps-and-games/merch">Merch by Amazon</a></li>
+                                        
+                                            <li><a href="/apps-and-games/leaderboardsandtournaments">Leaderboard & Tournaments</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            
+                        </div>
+                    
+                
+                    
+                        <div class="dpfnCol">
+                            
+                                <div class="dpfnGroup accrItem">
+                                    <div class='dpIconArrow accrHandle'></div>
+                                    
+                                        
+                                        
+                                            <h3>Support</h3>
+                                        
+                                    
+                                    <ul>
+                                        
+                                            <li><a href="/support">Amazon Developer Support</a></li>
+                                        
+                                            <li><a href="/docs/app-submission/faq-landing.html">FAQs</a></li>
+                                        
+                                            <li><a href="https://forums.developer.amazon.com/">Amazon Developer Forums</a></li>
+                                        
+                                            <li><a href="/support/contact-us">Contact Us</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            
+                                <div class="dpfnGroup accrItem">
+                                    <div class='dpIconArrow accrHandle'></div>
+                                    
+                                        
+                                        
+                                            <h3>Legal</h3>
+                                        
+                                    
+                                    <ul>
+                                        
+                                            <li><a href="/terms-and-agreements">Terms & Agreements</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            
+                        </div>
+                    
+                        
+                        </div>
+                    
+                
+            </div>
+        </div>
+    </nav>
+
+    <div class="dpfSocialLocal clearfix">
+        <div class='dpfWidth'>
+            <div class='dpfLocale'>
+                
+
+
+
+<nav class="dpLangSwitcher dpsfFlyout">
+    <span class='dplsTitle'>Language</span>
+    <div class='dplsSwitch'>
+        <span class="dplsCurrent dpsfFlyoutCurrent">
+            <i class='dpsfIcon dpsfIconGlobe'></i>
+            English
+        </span>
+        <div class='dplsOptionsWrap dpsfFlyoutWrap'>
+            <ul class="dplsOptions dpsfFlyoutContent">
+                
+                    
+                    
+                        
+                    
+                    <li class="dplsOption dpsfFlyoutItem dplsOptionActive">
+                        <a data-locale="en_US" href="/blogs/appstore/feed/entries">
+                            English
+                        </a>
+                    </li>
+                
+                    
+                    
+                    <li class="dplsOption dpsfFlyoutItem ">
+                        <a data-locale="zh_CN" href="/zh/blogs/appstore/feed/entries">
+                            Chinese (中文)
+                        </a>
+                    </li>
+                
+                    
+                    
+                    <li class="dplsOption dpsfFlyoutItem ">
+                        <a data-locale="ja_JP" href="/ja/blogs/appstore/feed/entries">
+                            Japanese (日本語)
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+            </div>
+            <div class="dpfSocial">
+                <span class="dpfSocialTitle">
+                    Follow Us:
+                </span>
+                
+                    <a href="https://www.youtube.com/channel/UCT9ApARFgQJOeqD-ygmxnJQ">
+                        <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/logo-youtube.png" alt="youtube_icon"/>
+                    </a>
+                
+                    <a href="https://www.facebook.com/AmazonAppDev">
+                        <img src="https://images-na.ssl-images-amazon.com/images/G/01/mobile-apps/dex/logo-facebook._V290989945_.png" alt="facebook_icon"/>
+                    </a>
+                
+                    <a href="https://www.twitter.com/AmazonAppDev">
+                        <img src="https://images-na.ssl-images-amazon.com/images/G/01/mobile-apps/dex/logo-twitter._V290989945_.png" alt="twitter_icon"/>
+                    </a>
+                
+                    <a href="/public/community/blog">
+                        <img src="https://images-na.ssl-images-amazon.com/images/G/01/mobile-apps/dex/logo-blog._V290989945_.png" alt="blog_icon"/>
+                    </a>
+                
+                    <a href="https://www.twitch.tv/amazonappdev">
+                        <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/logo-twitch.png" alt="twitch_icon"/>
+                    </a>
+                
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+<div class="dpfAreaOfInterest dpsfFlyout">
+    <span class='dpfaCurrent'>
+        <i class='dpsfIcon dpsfIconDots'></i>
+    </span>
+    <div class="dpfWidth dpsfFlyoutWrap">
+        <div class="dpfaItems dpsfFlyoutContent">
+            <h3><hza:string id="area_of_interest_title" /></h3>
+            
+                <div class="dpfaItem dpsfFlyoutItem">
+                    <a href="/alexa">
+                        <span class='dpfaiText'>Alexa</span>
+                        <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/platform-logos/white/Alexalogoheaderwhite._V506548913_.png" alt="Alexa" />
+                    </a>
+                </div>
+            
+                <div class="dpfaItem dpsfFlyoutItem">
+                    <a href="/apps-and-games">
+                        <span class='dpfaiText'>Amazon Appstore</span>
+                        <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/platform-logos/white/Appstorelogowhite.png" alt="Amazon Appstore" />
+                    </a>
+                </div>
+            
+                <div class="dpfaItem dpsfFlyoutItem">
+                    <a href="https://aws.amazon.com">
+                        <span class='dpfaiText'>Amazon Web Services</span>
+                        <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/platform-logos/white/AWS_logo_RGB_WHT._CB1506540482_.png" alt="Amazon Web Services" />
+                    </a>
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+    <div class="dpfCopyright">
+        © 2010-2022, Amazon.com, Inc. or its affiliates. All Rights Reserved.
+    </div>
+</footer>
+    </div></body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LVXJD4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</html>

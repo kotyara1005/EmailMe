@@ -21,7 +21,6 @@ public class RedditParser implements Parser {
     }
     @Override
     public ArrayList<ParsingEntry> parse(ZonedDateTime start_from) throws IOException, InterruptedException {
-        HttpClient client = HttpClient.newBuilder().build();
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create("https://www.redditinc.com/blog/topic/technology"))
                 .GET()
