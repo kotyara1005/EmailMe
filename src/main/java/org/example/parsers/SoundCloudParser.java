@@ -15,6 +15,11 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class SoundCloudParser implements Parser {
+    public HttpClient client;
+
+    public SoundCloudParser(HttpClient client) {
+        this.client = client;
+    }
     @Override
     public ArrayList<ParsingEntry> parse(ZonedDateTime start_from) throws IOException, InterruptedException {
         HttpClient client = HttpClient.newBuilder().build();

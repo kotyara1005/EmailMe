@@ -18,6 +18,11 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class DropboxParser implements Parser {
+    HttpClient client;
+
+    public DropboxParser(HttpClient client) {
+        this.client = client;
+    }
     @Override
     public ArrayList<ParsingEntry> parse(ZonedDateTime start_from) throws IOException, InterruptedException {
         HttpClient client = HttpClient.newBuilder().build();

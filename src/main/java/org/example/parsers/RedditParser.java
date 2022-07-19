@@ -15,6 +15,10 @@ import java.time.ZonedDateTime;
 import java.util.ArrayList;
 
 public class RedditParser implements Parser {
+    HttpClient client;
+    public RedditParser(HttpClient client) {
+        this.client = client;
+    }
     @Override
     public ArrayList<ParsingEntry> parse(ZonedDateTime start_from) throws IOException, InterruptedException {
         HttpClient client = HttpClient.newBuilder().build();

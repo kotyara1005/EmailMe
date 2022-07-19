@@ -75,11 +75,12 @@ public class Main {
         HttpClient client = HttpClient.newHttpClient();
         List<Parser> parsers = new ArrayList<>();
         parsers.add(new AirbnbParser(client));
-        parsers.add(new AmazonParser());
-        parsers.add(new DropboxParser());
-        parsers.add(new EbayParser());
-        parsers.add(new RedditParser());
-        parsers.add(new SoundCloudParser());
+        parsers.add(new AmazonParser(client));
+        parsers.add(new DropboxParser(client));
+        parsers.add(new EbayParser(client));
+        parsers.add(new RedditParser(client));
+        parsers.add(new SoundCloudParser(client));
+
         try {
             new App(new Emailer(password), parsers, Clock.systemDefaultZone()).run();
         } catch (Exception e) {

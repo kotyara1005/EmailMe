@@ -14,6 +14,11 @@ import java.time.ZonedDateTime;
 import java.util.ArrayList;
 
 public class AmazonParser implements Parser {
+    HttpClient client;
+
+    public AmazonParser(HttpClient client) {
+        this.client = client;
+    }
     public ArrayList<ParsingEntry> parse(ZonedDateTime start_from) throws IOException, InterruptedException {
         HttpClient client = HttpClient.newBuilder().build();
         HttpRequest request = HttpRequest.newBuilder()
