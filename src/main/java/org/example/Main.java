@@ -80,7 +80,7 @@ public class Main {
         parsers.add(new EbayParser(client));
         parsers.add(new RedditParser(client));
         parsers.add(new SoundCloudParser(client));
-
+//        System.out.println(1);
         try {
             new App(new Emailer(password), parsers, Clock.systemDefaultZone()).run();
         } catch (Exception e) {
